@@ -1,0 +1,13 @@
+FallDetector: svm: 6,780, theta: -62,460, dsvm: 22,353, agsvm: -4,705, adgsvm: -15,513
+FallDetector: svm: 11,570, theta: -88,704, dsvm: 6,595, agsvm: -11,404, adgsvm: -6,500
+FallDetector: svm: 9,855, theta: -86,471, dsvm: 4,375, agsvm: -9,469, adgsvm: -4,203
+FallDetector: svm: 9,187, theta: 87,696, dsvm: 1,282, agsvm: 8,952, adgsvm: 1,250
+FallDetector: svm: 9,767, theta: 87,493, dsvm: 0,674, agsvm: 9,495, adgsvm: 0,655
+FallDetector: svm: 9,898, theta: 88,858, dsvm: 0,326, agsvm: 9,772, adgsvm: 0,322
+FallDetector: svm: 9,541, theta: 89,620, dsvm: 0,876, agsvm: 9,500, adgsvm: 0,872
+FallDetector: svm: 9,486, theta: -88,999, dsvm: 0,577, agsvm: -9,381, adgsvm: -0,571
+FallDetector: svm: 9,605, theta: -87,179, dsvm: 0,554, agsvm: -9,304, adgsvm: -0,537
+FallDetector: svm: 9,527, theta: -87,734, dsvm: 0,511, agsvm: -9,287, adgsvm: -0,498
+FallDetector: svm: 9,453, theta: -87,601, dsvm: 0,311, agsvm: -9,202, adgsvm: -0,302
+FallDetector: svm: 9,673, theta: -87,318, dsvm: 0,343, agsvm: -9,384, adgsvm: -0,333
+FallDetector: calibrazione: normX: -0.149; normY: -0.465; normZ: -0.089; counter: 50

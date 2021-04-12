@@ -1,0 +1,1 @@
+FallDetector: calibrazione: normX: -6.233; normY: -3.986; normZ: 12.148; counter: 50
