@@ -1,22 +1,9 @@
-# python3 pandas_test.py
-# idea:  in base a quanto e come varia il fall index possiamo stabilire se si è verificata una caduta
-# Se c'è un picco che resta più o meno costante allora è possibile assumere che si sia verificata una caduta
-# Se c'è un picco che non resta costante anzi tende a decrescere, allora è possibile assumere che la
-# caduta non si sia verificata.
-# Una cosa che ho notato è che l'accelerometro non è costantente nel fornire i valori, ma tende ad accelerare
-# all'aumentare delle variazioni di accelerazione. Sembra valido per il mio samsung, non so se è un discorso
-# comune a tutti i dispositivi.
-
-# Fare un'implementazione per smartwatch in grado di fare dei run di misurazione molto lunghi e vedere come
-# si comporta il Fall Index nel tempo
-
-
+# python3 extract_stasis.py
 
 import pandas
 import matplotlib.pyplot as plt
 import math
 
-print(pandas.__version__)
 
 G = 9.81
 ACCELERATION_IMPACT_COEFFICIENT = 2.5
@@ -64,7 +51,7 @@ def extract_stasis(df, csv_name, csv_path):
 
         acceleration_impact_analyzed = acceleration_impact_analyzed + 1
         subset = df[i+1 : i + 26]
-        subset_csv_name = '{}/stasis/{}_stasi_{}.csv'.format(csv_path, csv_name, count)
+        subset_csv_name = '{}/{}_stasi_{}.csv'.format(csv_path, csv_name, count)
         print(subset_csv_name)
         subset.to_csv(subset_csv_name, sep = ';', index = False)
         count = count + 1
@@ -72,9 +59,24 @@ def extract_stasis(df, csv_name, csv_path):
     print('___acceleration_impact_analyzed: {}'.format(acceleration_impact_analyzed))
 
 
+def set_parameters(csv_path, csv_name, G, ACCELERATION_IMPACT_COEFFICIENT, ACCELERATION_FREE_FALL_COEFFICIENT, MIN_SQM, MAX_SPIKES, MEDIANA_INTERVAL_SIZE, LOWER_BOUND_MEDIANA, UPPER_BOUND_MEDIANA):
+    ACCELERATION_IMPACT = ACCELERATION_IMPACT_COEFFICIENT * G
+    ACCELERATION_FREE_FALL = ACCELERATION_FREE_FALL_COEFFICIENT * G
 
-csv_name='fall_1618220682585_index'
-csv_path='x360'
-stasi = pandas.read_csv('{}/{}.csv'.format(csv_path, csv_name), sep=';')
+    acceleration_impact_analyzed = 0
 
-extract_stasis(stasi, csv_name, csv_path)
+    print('_G: {}'.format(G))
+    print('_ACCELERATION_IMPACT: {} ({})'.format(ACCELERATION_IMPACT, ACCELERATION_IMPACT_COEFFICIENT))
+    print('_ACCELERATION_FREE_FALL: {} ({})'.format(ACCELERATION_FREE_FALL, ACCELERATION_FREE_FALL_COEFFICIENT))
+    print('_MIN_SQM: {}'.format(MIN_SQM))
+    print('_MAX_SPIKES: {}'.format(MAX_SPIKES))
+    print('_MEDIANA_INTERVAL_SIZE: {}'.format(MEDIANA_INTERVAL_SIZE))
+    print('_LOWER_BOUND_MEDIANA: {}'.format(LOWER_BOUND_MEDIANA))
+    print('_UPPER_BOUND_MEDIANA: {}'.format(UPPER_BOUND_MEDIANA))
+    stasi = pandas.read_csv('{}/{}.csv'.format(csv_path, csv_name), sep=';')
+    extract_stasis(stasi, csv_name, csv_path)
+
+
+csv_path='shock-2/TP'
+csv_name='fall_1616171234781'
+set_parameters(csv_path, csv_name, 9.81, 2.5, 0.3, 1.0, 2, 17, 0.89, 1.13)
