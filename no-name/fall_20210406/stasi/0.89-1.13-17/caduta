@@ -1,0 +1,31 @@
+_G: 9.81
+_ACCELERATION_IMPACT: 24.525000000000002 (2.5)
+_ACCELERATION_FREE_FALL: 2.943 (0.3)
+_MIN_SQM: 1.0
+_MAX_SPIKES: 2
+_MEDIANA_INTERVAL_SIZE: 17
+_LOWER_BOUND_MEDIANA: 0.89
+_UPPER_BOUND_MEDIANA: 1.13
+
+__dataframe: fall_20210406_stasi__
+___a: 25__
+___fall evaluation___
+count    25.000000
+mean     10.551720
+std       2.051399
+min       6.853000
+25%       9.763000
+50%      10.673000
+75%      11.232000
+max      16.333000
+Name: a, dtype: float64
+__mediana: 10.673__
+__mediana__
+current: 10.673; result: True
+__dev standard__
+min: 1.0; current: 2.0513994719052975; result: True
+__spikes__
+threshold: 24.525000000000002; max: 2; current: 0; result: True
+__filter__
+min: 9.49897; max: 12.06049; current: 25; got: 17: result: True
+_Fall detected

@@ -1,0 +1,84 @@
+_G: 9.81
+_ACCELERATION_IMPACT: 24.525000000000002 (2.5)
+_ACCELERATION_FREE_FALL: 2.943 (0.3)
+_MIN_SQM: 1.0
+_MAX_SPIKES: 2
+_MEDIANA_INTERVAL_SIZE: 20
+_LOWER_BOUND_MEDIANA: 0.93
+_UPPER_BOUND_MEDIANA: 1.03
+
+__dataframe: fall_1618220682585_index__
+__over ACCELERATION_IMPACT 24.525000000000002: 119
+___acceleration_impact_analyzed: 22
+__under ACCELERATION_FREE_FALL 2.943: 72
+
+__dataframe: x360/subset_142732_index.csv__
+___a: 36__
+___fall evaluation___
+count    25.000000
+mean     12.182512
+std       2.204439
+min       3.827600
+25%      12.810600
+50%      12.810600
+75%      12.810600
+max      15.313600
+Name: a, dtype: float64
+__mediana: 12.8106__
+__mediana__
+current: 12.8106; result: True
+__dev standard__
+min: 1.0; current: 2.204438916391198; result: True
+__spikes__
+threshold: 24.525000000000002; max: 2; current: 0; result: True
+__filter__
+min: 11.913858000000001; max: 13.194918000000001; current: 25; got: 20: result: True
+_Fall detected
+
+
+__dataframe: x360/subset_143493_index.csv__
+___a: 36__
+___fall evaluation___
+count    25.000000
+mean      9.308420
+std       1.864826
+min       7.082000
+25%       8.916600
+50%       8.916600
+75%       8.916600
+max      15.601500
+Name: a, dtype: float64
+__mediana: 8.9166__
+__mediana__
+current: 8.9166; result: True
+__dev standard__
+min: 1.0; current: 1.8648255535035976; result: True
+__spikes__
+threshold: 24.525000000000002; max: 2; current: 0; result: True
+__filter__
+min: 8.292438; max: 9.184098; current: 25; got: 21: result: True
+_Fall detected
+
+
+__dataframe: x360/subset_147250_index.csv__
+___a: 36__
+___fall evaluation___
+count    25.000000
+mean     14.890848
+std       1.748071
+min       7.772500
+25%      14.932000
+50%      15.602200
+75%      15.602200
+max      15.602200
+Name: a, dtype: float64
+__mediana: 15.6022__
+__mediana__
+current: 15.6022; result: True
+__dev standard__
+min: 1.0; current: 1.7480710912603068; result: True
+__spikes__
+threshold: 24.525000000000002; max: 2; current: 0; result: True
+__filter__
+min: 14.510046; max: 16.070266; current: 25; got: 23: result: True
+_Fall detected

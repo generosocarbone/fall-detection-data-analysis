@@ -19,19 +19,32 @@ import math
 print(pandas.__version__)
 
 G = 9.81
-ACCELERATION_IMPACT = 2.5 * G
-ACCELERATION_FREE_FALL = 0.3 * G
+ACCELERATION_IMPACT_COEFFICIENT = 2.5
+ACCELERATION_FREE_FALL_COEFFICIENT = 0.3
+ACCELERATION_IMPACT = ACCELERATION_IMPACT_COEFFICIENT * G
+ACCELERATION_FREE_FALL = ACCELERATION_FREE_FALL_COEFFICIENT * G
 
 MIN_SQM = 1.0
 
 MAX_SPIKES = 2
 
-MEDIANA_INTERVAL_SIZE = 20
-LOWER_BOUND_MEDIANA = 0.93
-UPPER_BOUND_MEDIANA = 1.03
+MEDIANA_INTERVAL_SIZE = 17
+LOWER_BOUND_MEDIANA = 0.89
+UPPER_BOUND_MEDIANA = 1.13
 
+acceleration_impact_analyzed = 0
+
+print('_G: {}'.format(G))
+print('_ACCELERATION_IMPACT: {} ({})'.format(ACCELERATION_IMPACT, ACCELERATION_IMPACT_COEFFICIENT))
+print('_ACCELERATION_FREE_FALL: {} ({})'.format(ACCELERATION_FREE_FALL, ACCELERATION_FREE_FALL_COEFFICIENT))
+print('_MIN_SQM: {}'.format(MIN_SQM))
+print('_MAX_SPIKES: {}'.format(MAX_SPIKES))
+print('_MEDIANA_INTERVAL_SIZE: {}'.format(MEDIANA_INTERVAL_SIZE))
+print('_LOWER_BOUND_MEDIANA: {}'.format(LOWER_BOUND_MEDIANA))
+print('_UPPER_BOUND_MEDIANA: {}'.format(UPPER_BOUND_MEDIANA))
 
 def analyze_dataframe_for_fall_index(df, title):
+    global acceleration_impact_analyzed
     print('\n__dataframe: {}__'.format(title))
     df.plot.line()
     a = df['a']
@@ -51,10 +64,13 @@ def analyze_dataframe_for_fall_index(df, title):
         else:
             continue
 
+        acceleration_impact_analyzed = acceleration_impact_analyzed + 1
         subset = df[i - 10:i + 26]
-        csv_name = 'davide/subset_{}_index.csv'.format(i)
+        csv_name = 'no-name/fall_20210402/subset_{}_index.csv'.format(i)
         subset.to_csv(csv_name, sep = ';', index = False)
-        analyze_dataframe_from_csv_name('davide/subset_{}_index.csv'.format(i))
+        analyze_dataframe_from_csv_name('no-name/fall_20210402/subset_{}_index.csv'.format(i))
+
+    print('___acceleration_impact_analyzed: {}'.format(acceleration_impact_analyzed))
 
 
 def calculate_index(df):
@@ -120,14 +136,43 @@ def analyze_dataframe_from_csv_name(csv_name):
 
 
 
-
-csv_name='fall_20210407'
-riposo = pandas.read_csv('davide/{}.csv'.format(csv_name), sep=';')
-analyze_dataframe_for_fall_index(riposo, csv_name)
-# analyze_dataframe(riposo, csv_name)
-
+csv_name='fall_20210402_stasi_9'
+riposo = pandas.read_csv('no-name/fall_20210402/{}.csv'.format(csv_name), sep=';')
+# analyze_dataframe_for_fall_index(riposo, csv_name)
+analyze_dataframe(riposo, csv_name)
 
 
+print("\n==================== NEW RUN ====================\n")
+
+
+G = 9.81
+ACCELERATION_IMPACT_COEFFICIENT = 2.5
+ACCELERATION_FREE_FALL_COEFFICIENT = 0.3
+ACCELERATION_IMPACT = ACCELERATION_IMPACT_COEFFICIENT * G
+ACCELERATION_FREE_FALL = ACCELERATION_FREE_FALL_COEFFICIENT * G
+
+MIN_SQM = 1.0
+
+MAX_SPIKES = 2
+
+MEDIANA_INTERVAL_SIZE = 17
+LOWER_BOUND_MEDIANA = 0.93
+UPPER_BOUND_MEDIANA = 1.03
+
+acceleration_impact_analyzed = 0
+
+print('_G: {}'.format(G))
+print('_ACCELERATION_IMPACT: {} ({})'.format(ACCELERATION_IMPACT, ACCELERATION_IMPACT_COEFFICIENT))
+print('_ACCELERATION_FREE_FALL: {} ({})'.format(ACCELERATION_FREE_FALL, ACCELERATION_FREE_FALL_COEFFICIENT))
+print('_MIN_SQM: {}'.format(MIN_SQM))
+print('_MAX_SPIKES: {}'.format(MAX_SPIKES))
+print('_MEDIANA_INTERVAL_SIZE: {}'.format(MEDIANA_INTERVAL_SIZE))
+print('_LOWER_BOUND_MEDIANA: {}'.format(LOWER_BOUND_MEDIANA))
+print('_UPPER_BOUND_MEDIANA: {}'.format(UPPER_BOUND_MEDIANA))
+
+riposo = pandas.read_csv('no-name/fall_20210402/{}.csv'.format(csv_name), sep=';')
+# analyze_dataframe_for_fall_index(riposo, csv_name)
+analyze_dataframe(riposo, csv_name)
 # plt.show()
 
 # size: 158075
