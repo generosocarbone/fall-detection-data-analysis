@@ -42,19 +42,19 @@ def set_parameters(csv_path, csv_name, G, ACCELERATION_IMPACT_COEFFICIENT, ACCEL
 
     acceleration_impact_analyzed = 0
 
-    # print('_G: {}'.format(G))
-    # print('_ACCELERATION_IMPACT: {} ({})'.format(ACCELERATION_IMPACT, ACCELERATION_IMPACT_COEFFICIENT))
-    # print('_ACCELERATION_FREE_FALL: {} ({})'.format(ACCELERATION_FREE_FALL, ACCELERATION_FREE_FALL_COEFFICIENT))
-    # print('_MIN_SQM: {}'.format(MIN_SQM))
-    # print('_MAX_SPIKES: {}'.format(MAX_SPIKES))
-    # print('_MEDIANA_INTERVAL_SIZE: {}'.format(MEDIANA_INTERVAL_SIZE))
-    # print('_LOWER_BOUND_MEDIANA: {}'.format(LOWER_BOUND_MEDIANA))
-    # print('_UPPER_BOUND_MEDIANA: {}'.format(UPPER_BOUND_MEDIANA))
+    print('_G: {}'.format(G))
+    print('_ACCELERATION_IMPACT: {} ({})'.format(ACCELERATION_IMPACT, ACCELERATION_IMPACT_COEFFICIENT))
+    print('_ACCELERATION_FREE_FALL: {} ({})'.format(ACCELERATION_FREE_FALL, ACCELERATION_FREE_FALL_COEFFICIENT))
+    print('_MIN_SQM: {}'.format(MIN_SQM))
+    print('_MAX_SPIKES: {}'.format(MAX_SPIKES))
+    print('_MEDIANA_INTERVAL_SIZE: {}'.format(MEDIANA_INTERVAL_SIZE))
+    print('_LOWER_BOUND_MEDIANA: {}'.format(LOWER_BOUND_MEDIANA))
+    print('_UPPER_BOUND_MEDIANA: {}'.format(UPPER_BOUND_MEDIANA))
     stasi = pandas.read_csv('{}/{}.csv'.format(csv_path, csv_name), sep=';')
     analyze_dataframe(stasi, csv_name, G, ACCELERATION_IMPACT, ACCELERATION_FREE_FALL, MIN_SQM, MAX_SPIKES, MEDIANA_INTERVAL_SIZE, LOWER_BOUND_MEDIANA, UPPER_BOUND_MEDIANA)
 
 
-for i in range(49):
+for i in range(1):
     csv_path='ato-2/fall_20210406/3G'
     csv_name='fall_20210406_stasi_{}'.format(i+1)
 
@@ -66,14 +66,14 @@ for i in range(49):
     set_parameters(csv_path, csv_name, 9.81, 3, 0.3, 1.0, 2, 17, 0.93, 1.03)
     print("\n==================== NEW RUN (4) ====================\n")
     set_parameters(csv_path, csv_name, 9.81, 3, 0.3, 1.0, 2, 20, 0.93, 1.03)
-    # print("\n==================== NEW RUN (5) ====================\n")
-    # set_parameters(csv_path, csv_name, 9.81, 2.5, 0.3, 1.0, 2, 17, 0.89, 1.13)
-    # print("\n==================== NEW RUN (6) ====================\n")
-    # set_parameters(csv_path, csv_name, 9.81, 2.5, 0.3, 1.0, 2, 20, 0.89, 1.13)
-    # print("\n==================== NEW RUN (7) ====================\n")
-    # set_parameters(csv_path, csv_name, 9.81, 2.5, 0.3, 1.0, 2, 17, 0.93, 1.03)
-    # print("\n==================== NEW RUN (8) ====================\n")
-    # set_parameters(csv_path, csv_name, 9.81, 2.5, 0.3, 1.0, 2, 20, 0.93, 1.03)
+    print("\n==================== NEW RUN (5) ====================\n")
+    set_parameters(csv_path, csv_name, 9.81, 2.5, 0.3, 1.0, 2, 17, 0.89, 1.13)
+    print("\n==================== NEW RUN (6) ====================\n")
+    set_parameters(csv_path, csv_name, 9.81, 2.5, 0.3, 1.0, 2, 20, 0.89, 1.13)
+    print("\n==================== NEW RUN (7) ====================\n")
+    set_parameters(csv_path, csv_name, 9.81, 2.5, 0.3, 1.0, 2, 17, 0.93, 1.03)
+    print("\n==================== NEW RUN (8) ====================\n")
+    set_parameters(csv_path, csv_name, 9.81, 2.5, 0.3, 1.0, 2, 20, 0.93, 1.03)
     print("\n==================== END RUN ====================\n")
 
 
