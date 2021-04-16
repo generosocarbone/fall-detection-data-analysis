@@ -37,14 +37,14 @@ MAX_MEDIANA = G * 1.03;
 
 acceleration_impact_analyzed = 0
 
-print('_G: {}'.format(G))
-print('_ACCELERATION_IMPACT: {} ({})'.format(ACCELERATION_IMPACT, ACCELERATION_IMPACT_COEFFICIENT))
-print('_ACCELERATION_FREE_FALL: {} ({})'.format(ACCELERATION_FREE_FALL, ACCELERATION_FREE_FALL_COEFFICIENT))
-print('_MIN_SQM: {}'.format(MIN_SQM))
-print('_MAX_SPIKES: {}'.format(MAX_SPIKES))
-print('_MEDIANA_INTERVAL_SIZE: {}'.format(MEDIANA_INTERVAL_SIZE))
-print('_LOWER_BOUND_MEDIANA: {}'.format(LOWER_BOUND_MEDIANA))
-print('_UPPER_BOUND_MEDIANA: {}'.format(UPPER_BOUND_MEDIANA))
+# print('_G: {}'.format(G))
+# print('_ACCELERATION_IMPACT: {} ({})'.format(ACCELERATION_IMPACT, ACCELERATION_IMPACT_COEFFICIENT))
+# print('_ACCELERATION_FREE_FALL: {} ({})'.format(ACCELERATION_FREE_FALL, ACCELERATION_FREE_FALL_COEFFICIENT))
+# print('_MIN_SQM: {}'.format(MIN_SQM))
+# print('_MAX_SPIKES: {}'.format(MAX_SPIKES))
+# print('_MEDIANA_INTERVAL_SIZE: {}'.format(MEDIANA_INTERVAL_SIZE))
+# print('_LOWER_BOUND_MEDIANA: {}'.format(LOWER_BOUND_MEDIANA))
+# print('_UPPER_BOUND_MEDIANA: {}'.format(UPPER_BOUND_MEDIANA))
 
 def plot_dataframe(df, title):
     global acceleration_impact_analyzed
@@ -63,17 +63,24 @@ def analyze_dataframe(df, title):
     a = df['a']
     print('___a: {}__'.format(a.size))
     a = a[2:]
+
     print('___fall evaluation___')
     mediana = a.median()
-
     result = False
 
     if a.size == 12:
         print('___free fall___')
         result_mediana = mediana <= MAX_MEDIANA and mediana >= MIN_MEDIANA
-        result = result_mediana
-        print('__mediana: {}__'.format(mediana))
-        print('__mediana__\ncurrent: {}; result: {}; MAX_MEDIANA: {}; MIN_MEDIANA: {}'.format(mediana, result_mediana, MAX_MEDIANA, MIN_MEDIANA))
+
+        filtered = a[a >= MIN_MEDIANA]
+        filtered = filtered[filtered <= MAX_MEDIANA]
+        result_filtered = filtered.size >= (MEDIANA_INTERVAL_SIZE / 2)
+
+        result = result_mediana and result_filtered
+
+        print('__mediana\ncurrent: {}; result: {}; MAX_MEDIANA: {}; MIN_MEDIANA: {}'.format(mediana, result_mediana, MAX_MEDIANA, MIN_MEDIANA))
+        print('__filter\nmin: {}; max: {}; current: {}; got: {}: result: {}'.format(MIN_MEDIANA, MAX_MEDIANA, a.size, filtered.size, result_filtered))
+        print(filtered)
     else:
         std = a.std()
 
@@ -111,10 +118,15 @@ def analyze_dataframe_from_csv_name(csv_name):
 
 
 # csv_name='paragone/test-4/101/FP-test4'
-csv_name='paragone/test-4/101/FP-test4'
+csv_name='test-notturno/FP/camminata.freefall.1'
 riposo = pandas.read_csv('{}.csv'.format(csv_name), sep=';')
-plot_dataframe(riposo, csv_name)
+# plot_dataframe(riposo, csv_name)
 analyze_dataframe(riposo, csv_name)
 
+csv_name='test-notturno/FP/tp1'
+riposo = pandas.read_csv('{}.csv'.format(csv_name), sep=';')
+# plot_dataframe(riposo, csv_name)
+analyze_dataframe(riposo, csv_name)
 
+plt.savefig('{}.png'.format('confronto'))
 plt.show()

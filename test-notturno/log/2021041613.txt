@@ -1,0 +1,171 @@
+[20210416 13:02:13] MqttHelper: publish: onFailure: message push failure: Connection lost (32109) - java.io.EOFException; org.eclipse.paho.android.service.MqttDeliveryTokenAndroid@fcd4f00
+[20210416 13:02:13] MqttHelper: publish: onFailure: message push failure: Connection lost (32109) - java.io.EOFException; org.eclipse.paho.android.service.MqttDeliveryTokenAndroid@c3102df
+[20210416 13:02:13] MqttHelper: connectionLost: Connection to broker lost: Connection lost (32109) - java.io.EOFException
+[20210416 13:02:13] WorkMainActivity: onConnectionLost: mqtt
+[20210416 13:02:13] Utils: update-timer: Lock acquired
+[20210416 13:02:16] MqttHelper: connected complete. Is it a reconnect? true
+[20210416 13:02:16] MqttHelper: subscribeToTopic: subscribing
+[20210416 13:02:16] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210416 13:02:16] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ULMPPVTB"}}
+[20210416 13:02:16] WorkMainActivity: newMessage: {"additionalData":{"alias":"ULMPPVTB"},"commandType":"Sync"}
+[20210416 13:02:16] WorkMainActivity: newMessage: sync
+[20210416 13:02:16] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"DLWUCFBW"}}
+[20210416 13:02:16] WorkMainActivity: newMessage: {"additionalData":{"alias":"DLWUCFBW"},"commandType":"Sync"}
+[20210416 13:02:16] WorkMainActivity: newMessage: sync
+[20210416 13:02:16] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ULMPPVTB"}}
+[20210416 13:02:16] WorkMainActivity: newMessage: {"additionalData":{"alias":"ULMPPVTB"},"commandType":"Sync"}
+[20210416 13:02:16] WorkMainActivity: newMessage: sync
+[20210416 13:02:16] MqttHelper: onSuccess: message published: PUBACK msgId 16; coda: 1
+[20210416 13:02:16] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210416 13:02:16] MqttHelper: deliveryComplete: PUBACK msgId 16
+[20210416 13:02:16] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ILSCNOUZ"}}
+[20210416 13:02:16] WorkMainActivity: newMessage: {"additionalData":{"alias":"ILSCNOUZ"},"commandType":"Sync"}
+[20210416 13:02:16] WorkMainActivity: newMessage: sync
+[20210416 13:02:17] MqttHelper: onSuccess: message published: PUBACK msgId 17; coda: 0
+[20210416 13:02:17] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210416 13:02:17] MqttHelper: deliveryComplete: PUBACK msgId 17
+[20210416 13:02:17] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ILSCNOUZ"}}
+[20210416 13:02:17] WorkMainActivity: newMessage: {"additionalData":{"alias":"ILSCNOUZ"},"commandType":"Sync"}
+[20210416 13:02:17] WorkMainActivity: newMessage: sync
+[20210416 13:02:17] MqttHelper: onSuccess: MQTT Subscribed!
+[20210416 13:02:20] WorkMainActivity: sync posizione: {"id":43,"worker_id":55,"position":-1}
+[20210416 13:02:20] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 13:02:20] WorkMainActivity: sync posizione: {"id":43,"worker_id":55,"position":-1}
+[20210416 13:02:20] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 13:03:51] BLEService: start scan...
+[20210416 13:06:12] BLEService: stop scan...
+[20210416 13:06:12] BLEService: stopScan: shouldScan: true
+[20210416 13:06:13] BLEService: stopScan: next scan in : 40 seconds
+[20210416 13:06:13] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 13:06:13] BLEService: No sector. Alarms will not be sent
+[20210416 13:09:40] BLEService: start scan...
+[20210416 13:09:40] Utils: update-timer: Lock acquired
+[20210416 13:09:40] UpdateListener: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 13:09:40] UpdateListener: Next alarm in 600000 seconds
+[20210416 13:09:41] UpdateListener: uwb: sendTrace: health: true; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":77,"beacons":[],"clientId":"55","dpi":[]}
+[20210416 13:09:41] MqttHelper: publishTrace: message: {"linkKeep":null,"tag":[],"alias":"ILSCNOUZ","battery":77,"beacons":[],"clientId":"55","dpi":[],"healthData":null}
+[20210416 13:10:00] BLEService: stop scan...
+[20210416 13:10:00] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210416 13:10:00] BLEService: stopScan: shouldScan: true
+[20210416 13:10:01] BLEService: stopScan: next scan in : 40 seconds
+[20210416 13:10:01] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 13:10:01] BLEService: No sector. Alarms will not be sent
+[20210416 13:13:29] BLEService: start scan...
+[20210416 13:16:32] FallDetector: last second ok
+[20210416 13:18:58] BLEService: stop scan...
+[20210416 13:18:58] BLEService: stopScan: shouldScan: true
+[20210416 13:18:58] BLEService: stopScan: next scan in : 40 seconds
+[20210416 13:18:58] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 13:18:58] BLEService: No sector. Alarms will not be sent
+[20210416 13:19:41] BLEService: start scan...
+[20210416 13:19:41] Utils: update-timer: Lock acquired
+[20210416 13:19:41] UpdateListener: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 13:19:41] UpdateListener: Next alarm in 600000 seconds
+[20210416 13:19:41] UpdateListener: uwb: sendTrace: health: true; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":75,"beacons":[],"clientId":"55","dpi":[]}
+[20210416 13:19:41] MqttHelper: publishTrace: message: {"linkKeep":null,"tag":[],"alias":"ILSCNOUZ","battery":75,"beacons":[],"clientId":"55","dpi":[],"healthData":null}
+[20210416 13:20:01] BLEService: stop scan...
+[20210416 13:20:01] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210416 13:20:01] BLEService: stopScan: shouldScan: true
+[20210416 13:20:01] BLEService: stopScan: next scan in : 40 seconds
+[20210416 13:20:01] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 13:20:01] BLEService: No sector. Alarms will not be sent
+[20210416 13:23:15] BLEService: start scan...
+[20210416 13:26:32] BLEService: stop scan...
+[20210416 13:26:32] BLEService: stopScan: shouldScan: true
+[20210416 13:26:32] BLEService: stopScan: next scan in : 40 seconds
+[20210416 13:26:32] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 13:26:32] BLEService: No sector. Alarms will not be sent
+[20210416 13:29:42] BLEService: start scan...
+[20210416 13:29:42] Utils: update-timer: Lock acquired
+[20210416 13:29:42] UpdateListener: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 13:29:42] UpdateListener: Next alarm in 600000 seconds
+[20210416 13:29:42] UpdateListener: uwb: sendTrace: health: true; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":73,"beacons":[],"clientId":"55","dpi":[]}
+[20210416 13:29:42] MqttHelper: publishTrace: message: {"linkKeep":null,"tag":[],"alias":"ILSCNOUZ","battery":73,"beacons":[],"clientId":"55","dpi":[],"healthData":null}
+[20210416 13:30:02] BLEService: stop scan...
+[20210416 13:30:02] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210416 13:30:02] BLEService: stopScan: shouldScan: true
+[20210416 13:30:02] BLEService: stopScan: next scan in : 40 seconds
+[20210416 13:30:02] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 13:30:02] BLEService: No sector. Alarms will not be sent
+[20210416 13:33:52] BLEService: start scan...
+[20210416 13:33:56] MqttHelper: publish: onFailure: message push failure: Connection lost (32109) - java.io.EOFException; org.eclipse.paho.android.service.MqttDeliveryTokenAndroid@a348cac
+[20210416 13:33:56] MqttHelper: publish: onFailure: message push failure: Connection lost (32109) - java.io.EOFException; org.eclipse.paho.android.service.MqttDeliveryTokenAndroid@575ed7b
+[20210416 13:33:56] MqttHelper: publish: onFailure: message push failure: Connection lost (32109) - java.io.EOFException; org.eclipse.paho.android.service.MqttDeliveryTokenAndroid@9b3c798
+[20210416 13:33:56] MqttHelper: connectionLost: Connection to broker lost: Connection lost (32109) - java.io.EOFException
+[20210416 13:33:56] WorkMainActivity: onConnectionLost: mqtt
+[20210416 13:33:56] Utils: update-timer: Lock acquired
+[20210416 13:33:59] MqttHelper: connected complete. Is it a reconnect? true
+[20210416 13:33:59] MqttHelper: subscribeToTopic: subscribing
+[20210416 13:33:59] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210416 13:33:59] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"DLWUCFBW"}}
+[20210416 13:33:59] WorkMainActivity: newMessage: {"additionalData":{"alias":"DLWUCFBW"},"commandType":"Sync"}
+[20210416 13:33:59] WorkMainActivity: newMessage: sync
+[20210416 13:33:59] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ULMPPVTB"}}
+[20210416 13:33:59] WorkMainActivity: newMessage: {"additionalData":{"alias":"ULMPPVTB"},"commandType":"Sync"}
+[20210416 13:33:59] WorkMainActivity: newMessage: sync
+[20210416 13:33:59] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ULMPPVTB"}}
+[20210416 13:33:59] WorkMainActivity: newMessage: {"additionalData":{"alias":"ULMPPVTB"},"commandType":"Sync"}
+[20210416 13:33:59] WorkMainActivity: newMessage: sync
+[20210416 13:33:59] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ULMPPVTB"}}
+[20210416 13:33:59] WorkMainActivity: newMessage: {"additionalData":{"alias":"ULMPPVTB"},"commandType":"Sync"}
+[20210416 13:33:59] WorkMainActivity: newMessage: sync
+[20210416 13:34:00] MqttHelper: onSuccess: message published: PUBACK msgId 19; coda: 2
+[20210416 13:34:00] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210416 13:34:00] MqttHelper: deliveryComplete: PUBACK msgId 19
+[20210416 13:34:00] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ILSCNOUZ"}}
+[20210416 13:34:00] WorkMainActivity: newMessage: {"additionalData":{"alias":"ILSCNOUZ"},"commandType":"Sync"}
+[20210416 13:34:00] WorkMainActivity: newMessage: sync
+[20210416 13:34:00] MqttHelper: onSuccess: message published: PUBACK msgId 20; coda: 1
+[20210416 13:34:00] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210416 13:34:00] MqttHelper: deliveryComplete: PUBACK msgId 20
+[20210416 13:34:00] MqttHelper: onSuccess: message published: PUBACK msgId 21; coda: 0
+[20210416 13:34:00] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210416 13:34:00] MqttHelper: deliveryComplete: PUBACK msgId 21
+[20210416 13:34:00] MqttHelper: onSuccess: MQTT Subscribed!
+[20210416 13:34:00] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ILSCNOUZ"}}
+[20210416 13:34:00] WorkMainActivity: newMessage: {"additionalData":{"alias":"ILSCNOUZ"},"commandType":"Sync"}
+[20210416 13:34:00] WorkMainActivity: newMessage: sync
+[20210416 13:34:00] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ILSCNOUZ"}}
+[20210416 13:34:00] WorkMainActivity: newMessage: {"additionalData":{"alias":"ILSCNOUZ"},"commandType":"Sync"}
+[20210416 13:34:00] WorkMainActivity: newMessage: sync
+[20210416 13:34:01] WorkMainActivity: sync posizione: {"id":43,"worker_id":55,"position":-1}
+[20210416 13:34:01] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 13:34:01] WorkMainActivity: sync posizione: {"id":43,"worker_id":55,"position":-1}
+[20210416 13:34:01] WorkMainActivity: sync posizione: {"id":43,"worker_id":55,"position":-1}
+[20210416 13:34:01] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 13:34:12] BLEService: stop scan...
+[20210416 13:34:12] BLEService: stopScan: shouldScan: true
+[20210416 13:34:12] BLEService: stopScan: next scan in : 40 seconds
+[20210416 13:34:12] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 13:34:12] BLEService: No sector. Alarms will not be sent
+[20210416 13:39:42] BLEService: start scan...
+[20210416 13:39:42] Utils: update-timer: Lock acquired
+[20210416 13:39:42] UpdateListener: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 13:39:42] UpdateListener: Next alarm in 600000 seconds
+[20210416 13:39:42] UpdateListener: uwb: sendTrace: health: true; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":71,"beacons":[],"clientId":"55","dpi":[]}
+[20210416 13:39:42] MqttHelper: publishTrace: message: {"linkKeep":null,"tag":[],"alias":"ILSCNOUZ","battery":71,"beacons":[],"clientId":"55","dpi":[],"healthData":null}
+[20210416 13:40:02] BLEService: stop scan...
+[20210416 13:40:02] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210416 13:40:02] BLEService: stopScan: shouldScan: true
+[20210416 13:40:02] BLEService: stopScan: next scan in : 40 seconds
+[20210416 13:40:02] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 13:40:02] BLEService: No sector. Alarms will not be sent
+[20210416 13:43:44] BLEService: start scan...
+[20210416 13:46:26] BLEService: stop scan...
+[20210416 13:46:26] BLEService: stopScan: shouldScan: true
+[20210416 13:46:26] BLEService: stopScan: next scan in : 40 seconds
+[20210416 13:46:26] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 13:46:26] BLEService: No sector. Alarms will not be sent
+[20210416 13:51:34] BLEService: start scan...
+[20210416 13:51:34] Utils: update-timer: Lock acquired
+[20210416 13:51:34] UpdateListener: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 13:51:34] UpdateListener: Next alarm in 600000 seconds
+[20210416 13:51:34] UpdateListener: uwb: sendTrace: health: true; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":69,"beacons":[],"clientId":"55","dpi":[]}
+[20210416 13:51:35] MqttHelper: publishTrace: message: {"linkKeep":null,"tag":[],"alias":"ILSCNOUZ","battery":69,"beacons":[],"clientId":"55","dpi":[],"healthData":null}
+[20210416 13:51:54] BLEService: stop scan...
+[20210416 13:51:54] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210416 13:51:54] BLEService: stopScan: shouldScan: true
+[20210416 13:51:54] BLEService: stopScan: next scan in : 40 seconds
+[20210416 13:51:54] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 13:51:55] BLEService: No sector. Alarms will not be sent
+[20210416 13:55:21] BLEService: start scan...
