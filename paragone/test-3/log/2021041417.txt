@@ -1,0 +1,350 @@
+[20210414 17:00:59] Utils: update-timer: Lock acquired
+[20210414 17:00:59] UpdateListener: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210414 17:00:59] UpdateListener: Next alarm in 600000 seconds
+[20210414 17:00:59] UpdateListener: uwb: sendTrace: health: true; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":100,"beacons":[],"clientId":"55","dpi":[]}
+[20210414 17:00:59] MqttHelper: publishTrace: message: {"linkKeep":null,"tag":[],"alias":"ILSCNOUZ","battery":100,"beacons":[],"clientId":"55","dpi":[],"healthData":null}
+[20210414 17:01:00] MqttHelper: onSuccess: message published: PUBACK msgId 23; coda: 0
+[20210414 17:01:00] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210414 17:01:00] MqttHelper: deliveryComplete: PUBACK msgId 23
+[20210414 17:01:00] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ILSCNOUZ"}}
+[20210414 17:01:00] WorkMainActivity: newMessage: {"additionalData":{"alias":"ILSCNOUZ"},"commandType":"Sync"}
+[20210414 17:01:00] WorkMainActivity: newMessage: sync
+[20210414 17:01:01] WorkMainActivity: sync posizione: {"id":43,"worker_id":55,"position":-1}
+[20210414 17:01:01] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210414 17:01:05] BLEService: stop scan...
+[20210414 17:01:05] BLEService: stopScan: shouldScan: true
+[20210414 17:01:05] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:01:05] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:01:05] BLEService: No sector. Alarms will not be sent
+[20210414 17:01:45] BLEService: start scan...
+[20210414 17:05:11] BLEService: stop scan...
+[20210414 17:05:11] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210414 17:05:11] BLEService: stopScan: shouldScan: true
+[20210414 17:05:11] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:05:11] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:05:11] BLEService: No sector. Alarms will not be sent
+[20210414 17:05:52] BLEService: start scan...
+[20210414 17:07:48] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"DLWUCFBW"}}
+[20210414 17:07:48] WorkMainActivity: newMessage: {"additionalData":{"alias":"DLWUCFBW"},"commandType":"Sync"}
+[20210414 17:07:48] WorkMainActivity: newMessage: sync
+[20210414 17:08:14] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"PTYCZDIX"}}
+[20210414 17:08:14] WorkMainActivity: newMessage: {"additionalData":{"alias":"PTYCZDIX"},"commandType":"Sync"}
+[20210414 17:08:14] WorkMainActivity: newMessage: sync
+[20210414 17:08:29] BLEService: stop scan...
+[20210414 17:08:29] BLEService: stopScan: shouldScan: true
+[20210414 17:08:29] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:08:29] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:08:29] BLEService: No sector. Alarms will not be sent
+[20210414 17:09:10] BLEService: start scan...
+[20210414 17:11:01] Utils: update-timer: Lock acquired
+[20210414 17:11:01] UpdateListener: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210414 17:11:01] UpdateListener: Next alarm in 600000 seconds
+[20210414 17:11:01] UpdateListener: uwb: sendTrace: health: true; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":100,"beacons":[],"clientId":"55","dpi":[]}
+[20210414 17:11:01] MqttHelper: publishTrace: message: {"linkKeep":null,"tag":[],"alias":"ILSCNOUZ","battery":100,"beacons":[],"clientId":"55","dpi":[],"healthData":null}
+[20210414 17:11:01] MqttHelper: onSuccess: message published: PUBACK msgId 24; coda: 0
+[20210414 17:11:01] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210414 17:11:01] MqttHelper: deliveryComplete: PUBACK msgId 24
+[20210414 17:11:01] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ILSCNOUZ"}}
+[20210414 17:11:01] WorkMainActivity: newMessage: {"additionalData":{"alias":"ILSCNOUZ"},"commandType":"Sync"}
+[20210414 17:11:01] WorkMainActivity: newMessage: sync
+[20210414 17:11:03] WorkMainActivity: sync posizione: {"id":43,"worker_id":55,"position":-1}
+[20210414 17:11:03] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210414 17:11:11] BLEService: stop scan...
+[20210414 17:11:11] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210414 17:11:11] BLEService: stopScan: shouldScan: true
+[20210414 17:11:11] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:11:11] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:11:11] BLEService: No sector. Alarms will not be sent
+[20210414 17:11:52] BLEService: start scan...
+[20210414 17:13:24] BLEService: stop scan...
+[20210414 17:13:24] BLEService: stopScan: shouldScan: true
+[20210414 17:13:24] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:13:24] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:13:24] BLEService: No sector. Alarms will not be sent
+[20210414 17:13:39] MqttHelper: connectionLost: Connection to broker lost: Connection lost (32109) - java.io.EOFException
+[20210414 17:13:39] WorkMainActivity: onConnectionLost: mqtt
+[20210414 17:13:39] Utils: update-timer: Lock acquired
+[20210414 17:13:40] ConnectionListener: RESTRICT_BACKGROUND_STATUS_DISABLED
+[20210414 17:13:41] ConnectionListener: RESTRICT_BACKGROUND_STATUS_DISABLED
+[20210414 17:13:43] MqttHelper: connected complete. Is it a reconnect? true
+[20210414 17:13:43] MqttHelper: subscribeToTopic: subscribing
+[20210414 17:13:43] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210414 17:13:44] MqttHelper: onSuccess: MQTT Subscribed!
+[20210414 17:13:44] WorkMainActivity: Screen off
+[20210414 17:13:44] Utils: update-timer: Lock acquired
+[20210414 17:14:04] BLEService: start scan...
+[20210414 17:14:11] FallDetector: last second ok
+[20210414 17:14:12] MqttHelper: connectionLost: Connection to broker lost: Connection lost (32109) - java.io.EOFException
+[20210414 17:14:12] WorkMainActivity: onConnectionLost: mqtt
+[20210414 17:14:12] Utils: update-timer: Lock acquired
+[20210414 17:14:12] ConnectionListener: RESTRICT_BACKGROUND_STATUS_DISABLED
+[20210414 17:14:13] ConnectionListener: RESTRICT_BACKGROUND_STATUS_DISABLED
+[20210414 17:14:13] WorkMainActivity: onConnectionFailure: retry number: 0 in 4776ms
+[20210414 17:14:13] MqttHelper: connect: onFailure: MQTT Failed to connect to broker: Connect already in progress (32110)
+[20210414 17:14:13] WorkMainActivity: onConnectionFailure: retry number: 1 in 2900ms
+[20210414 17:14:13] MqttHelper: connect: onFailure: MQTT Failed to connect to broker: Connect already in progress (32110)
+[20210414 17:14:14] MqttHelper: connected complete. Is it a reconnect? true
+[20210414 17:14:14] MqttHelper: subscribeToTopic: subscribing
+[20210414 17:14:14] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210414 17:14:15] MqttHelper: onSuccess: MQTT Subscribed!
+[20210414 17:14:16] MqttHelper: connect: connecting...
+[20210414 17:14:16] WorkMainActivity: onConnectionFailure: retry number: 0 in 3139ms
+[20210414 17:14:16] WorkMainActivity: onConnectionFailure: maybe not a legit call. Client connected avoiding duplicates.
+[20210414 17:14:16] MqttHelper: connect: onFailure: MQTT Failed to connect to broker: Client is connected (32100)
+[20210414 17:14:17] MqttHelper: connect: connecting...
+[20210414 17:14:17] WorkMainActivity: onConnectionFailure: retry number: 0 in 2843ms
+[20210414 17:14:17] WorkMainActivity: onConnectionFailure: maybe not a legit call. Client connected avoiding duplicates.
+[20210414 17:14:17] MqttHelper: connect: onFailure: MQTT Failed to connect to broker: Client is connected (32100)
+[20210414 17:14:24] BLEService: stop scan...
+[20210414 17:14:24] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210414 17:14:24] BLEService: stopScan: shouldScan: true
+[20210414 17:14:24] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:14:24] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:14:24] BLEService: No sector. Alarms will not be sent
+[20210414 17:14:47] FallDetector: last second ok
+[20210414 17:14:50] WorkMainActivity: Screen off
+[20210414 17:14:50] Utils: update-timer: Lock acquired
+[20210414 17:15:04] BLEService: start scan...
+[20210414 17:15:16] FallDetector: last second ok
+[20210414 17:15:24] BLEService: stop scan...
+[20210414 17:15:24] BLEService: stopScan: shouldScan: true
+[20210414 17:15:24] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:15:24] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:15:24] BLEService: No sector. Alarms will not be sent
+[20210414 17:16:06] BLEService: start scan...
+[20210414 17:16:24] FallDetector: last second ok
+[20210414 17:16:52] BLEService: stop scan...
+[20210414 17:16:52] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210414 17:16:52] BLEService: stopScan: shouldScan: true
+[20210414 17:16:52] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:16:52] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:16:52] BLEService: No sector. Alarms will not be sent
+[20210414 17:16:56] FallDetector: last second ok
+[20210414 17:17:09] WorkMainActivity: Screen off
+[20210414 17:17:09] Utils: update-timer: Lock acquired
+[20210414 17:17:32] BLEService: start scan...
+[20210414 17:17:34] FallDetector: last second ok
+[20210414 17:17:52] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"DLWUCFBW"}}
+[20210414 17:17:52] WorkMainActivity: newMessage: {"additionalData":{"alias":"DLWUCFBW"},"commandType":"Sync"}
+[20210414 17:17:52] WorkMainActivity: newMessage: sync
+[20210414 17:18:00] BLEService: stop scan...
+[20210414 17:18:00] BLEService: stopScan: shouldScan: true
+[20210414 17:18:00] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:18:00] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:18:00] BLEService: No sector. Alarms will not be sent
+[20210414 17:18:14] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"PTYCZDIX"}}
+[20210414 17:18:14] WorkMainActivity: newMessage: {"additionalData":{"alias":"PTYCZDIX"},"commandType":"Sync"}
+[20210414 17:18:14] WorkMainActivity: newMessage: sync
+[20210414 17:18:40] BLEService: start scan...
+[20210414 17:18:46] FallDetector: last second ok
+[20210414 17:18:53] WorkMainActivity: Screen off
+[20210414 17:18:53] Utils: update-timer: Lock acquired
+[20210414 17:19:00] BLEService: stop scan...
+[20210414 17:19:00] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210414 17:19:00] BLEService: stopScan: shouldScan: true
+[20210414 17:19:00] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:19:00] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:19:00] BLEService: No sector. Alarms will not be sent
+[20210414 17:19:20] FallDetector: last second ok
+[20210414 17:19:40] BLEService: start scan...
+[20210414 17:20:40] MqttHelper: connectionLost: Connection to broker lost: Connection lost (32109) - java.io.EOFException
+[20210414 17:20:40] WorkMainActivity: onConnectionLost: mqtt
+[20210414 17:20:40] Utils: update-timer: Lock acquired
+[20210414 17:20:42] ConnectionListener: RESTRICT_BACKGROUND_STATUS_DISABLED
+[20210414 17:20:42] BLEService: stop scan...
+[20210414 17:20:42] BLEService: stopScan: shouldScan: true
+[20210414 17:20:42] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:20:42] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:20:42] BLEService: No sector. Alarms will not be sent
+[20210414 17:20:44] ConnectionListener: RESTRICT_BACKGROUND_STATUS_DISABLED
+[20210414 17:20:49] MqttHelper: connected complete. Is it a reconnect? true
+[20210414 17:20:49] MqttHelper: subscribeToTopic: subscribing
+[20210414 17:20:49] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210414 17:20:49] MqttHelper: onSuccess: MQTT Subscribed!
+[20210414 17:21:01] Utils: update-timer: Lock acquired
+[20210414 17:21:01] UpdateListener: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210414 17:21:01] UpdateListener: Next alarm in 600000 seconds
+[20210414 17:21:01] UpdateListener: uwb: sendTrace: health: true; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":100,"beacons":[],"clientId":"55","dpi":[]}
+[20210414 17:21:01] MqttHelper: publishTrace: message: {"linkKeep":null,"tag":[],"alias":"ILSCNOUZ","battery":100,"beacons":[],"clientId":"55","dpi":[],"healthData":null}
+[20210414 17:21:02] MqttHelper: onSuccess: message published: PUBACK msgId 28; coda: 0
+[20210414 17:21:02] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210414 17:21:02] MqttHelper: deliveryComplete: PUBACK msgId 28
+[20210414 17:21:02] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ILSCNOUZ"}}
+[20210414 17:21:02] WorkMainActivity: newMessage: {"additionalData":{"alias":"ILSCNOUZ"},"commandType":"Sync"}
+[20210414 17:21:02] WorkMainActivity: newMessage: sync
+[20210414 17:21:03] WorkMainActivity: Screen off
+[20210414 17:21:03] Utils: update-timer: Lock acquired
+[20210414 17:21:06] WorkMainActivity: sync posizione: {"id":43,"worker_id":55,"position":-1}
+[20210414 17:21:06] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210414 17:21:06] MqttHelper: connectionLost: Connection to broker lost: Connection lost (32109) - java.io.EOFException
+[20210414 17:21:06] WorkMainActivity: onConnectionLost: mqtt
+[20210414 17:21:06] Utils: update-timer: Lock acquired
+[20210414 17:21:06] ConnectionListener: RESTRICT_BACKGROUND_STATUS_DISABLED
+[20210414 17:21:07] ConnectionListener: RESTRICT_BACKGROUND_STATUS_DISABLED
+[20210414 17:21:07] WorkMainActivity: onConnectionFailure: retry number: 0 in 4841ms
+[20210414 17:21:07] MqttHelper: connect: onFailure: MQTT Failed to connect to broker: Connect already in progress (32110)
+[20210414 17:21:08] MqttHelper: connected complete. Is it a reconnect? true
+[20210414 17:21:08] MqttHelper: subscribeToTopic: subscribing
+[20210414 17:21:08] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210414 17:21:08] MqttHelper: onSuccess: MQTT Subscribed!
+[20210414 17:21:12] MqttHelper: connect: connecting...
+[20210414 17:21:12] WorkMainActivity: onConnectionFailure: retry number: 0 in 4823ms
+[20210414 17:21:12] WorkMainActivity: onConnectionFailure: maybe not a legit call. Client connected avoiding duplicates.
+[20210414 17:21:12] MqttHelper: connect: onFailure: MQTT Failed to connect to broker: Client is connected (32100)
+[20210414 17:21:22] BLEService: start scan...
+[20210414 17:21:42] BLEService: stop scan...
+[20210414 17:21:42] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210414 17:21:42] BLEService: stopScan: shouldScan: true
+[20210414 17:21:43] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:21:43] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:21:43] BLEService: No sector. Alarms will not be sent
+[20210414 17:22:01] WorkMainActivity: Screen off
+[20210414 17:22:01] Utils: update-timer: Lock acquired
+[20210414 17:22:23] BLEService: start scan...
+[20210414 17:22:59] BLEService: stop scan...
+[20210414 17:22:59] BLEService: stopScan: shouldScan: true
+[20210414 17:22:59] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:22:59] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:22:59] BLEService: No sector. Alarms will not be sent
+[20210414 17:23:39] BLEService: start scan...
+[20210414 17:25:56] BLEService: stop scan...
+[20210414 17:25:56] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210414 17:25:56] BLEService: stopScan: shouldScan: true
+[20210414 17:25:56] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:25:56] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:25:56] BLEService: No sector. Alarms will not be sent
+[20210414 17:26:37] BLEService: start scan...
+[20210414 17:28:07] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"DLWUCFBW"}}
+[20210414 17:28:07] WorkMainActivity: newMessage: {"additionalData":{"alias":"DLWUCFBW"},"commandType":"Sync"}
+[20210414 17:28:07] WorkMainActivity: newMessage: sync
+[20210414 17:29:02] BLEService: stop scan...
+[20210414 17:29:02] BLEService: stopScan: shouldScan: true
+[20210414 17:29:02] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:29:02] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:29:02] BLEService: No sector. Alarms will not be sent
+[20210414 17:29:43] BLEService: start scan...
+[20210414 17:31:01] Utils: update-timer: Lock acquired
+[20210414 17:31:01] UpdateListener: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210414 17:31:01] UpdateListener: Next alarm in 600000 seconds
+[20210414 17:31:01] UpdateListener: uwb: sendTrace: health: true; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":100,"beacons":[],"clientId":"55","dpi":[]}
+[20210414 17:31:01] MqttHelper: publishTrace: message: {"linkKeep":null,"tag":[],"alias":"ILSCNOUZ","battery":100,"beacons":[],"clientId":"55","dpi":[],"healthData":null}
+[20210414 17:31:02] MqttHelper: onSuccess: message published: PUBACK msgId 30; coda: 0
+[20210414 17:31:02] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210414 17:31:02] MqttHelper: deliveryComplete: PUBACK msgId 30
+[20210414 17:31:02] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ILSCNOUZ"}}
+[20210414 17:31:02] WorkMainActivity: newMessage: {"additionalData":{"alias":"ILSCNOUZ"},"commandType":"Sync"}
+[20210414 17:31:02] WorkMainActivity: newMessage: sync
+[20210414 17:31:04] WorkMainActivity: sync posizione: {"id":43,"worker_id":55,"position":-1}
+[20210414 17:31:04] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210414 17:31:12] BLEService: stop scan...
+[20210414 17:31:12] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210414 17:31:12] BLEService: stopScan: shouldScan: true
+[20210414 17:31:12] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:31:12] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:31:12] BLEService: No sector. Alarms will not be sent
+[20210414 17:31:53] BLEService: start scan...
+[20210414 17:35:22] BLEService: stop scan...
+[20210414 17:35:22] BLEService: stopScan: shouldScan: true
+[20210414 17:35:22] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:35:22] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:35:22] BLEService: No sector. Alarms will not be sent
+[20210414 17:36:04] BLEService: start scan...
+[20210414 17:38:33] MqttHelper: connectionLost: Connection to broker lost: Connection lost (32109) - java.io.EOFException
+[20210414 17:38:33] WorkMainActivity: onConnectionLost: mqtt
+[20210414 17:38:33] Utils: update-timer: Lock acquired
+[20210414 17:38:36] MqttHelper: connected complete. Is it a reconnect? true
+[20210414 17:38:36] MqttHelper: subscribeToTopic: subscribing
+[20210414 17:38:36] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210414 17:38:37] MqttHelper: onSuccess: MQTT Subscribed!
+[20210414 17:38:37] BLEService: stop scan...
+[20210414 17:38:37] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210414 17:38:37] BLEService: stopScan: shouldScan: true
+[20210414 17:38:37] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:38:37] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:38:37] BLEService: No sector. Alarms will not be sent
+[20210414 17:39:19] BLEService: start scan...
+[20210414 17:41:02] Utils: update-timer: Lock acquired
+[20210414 17:41:02] UpdateListener: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210414 17:41:02] UpdateListener: Next alarm in 600000 seconds
+[20210414 17:41:02] UpdateListener: uwb: sendTrace: health: true; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":100,"beacons":[],"clientId":"55","dpi":[]}
+[20210414 17:41:02] MqttHelper: publishTrace: message: {"linkKeep":null,"tag":[],"alias":"ILSCNOUZ","battery":100,"beacons":[],"clientId":"55","dpi":[],"healthData":null}
+[20210414 17:41:02] MqttHelper: onSuccess: message published: PUBACK msgId 32; coda: 0
+[20210414 17:41:02] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210414 17:41:02] MqttHelper: deliveryComplete: PUBACK msgId 32
+[20210414 17:41:02] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ILSCNOUZ"}}
+[20210414 17:41:02] WorkMainActivity: newMessage: {"additionalData":{"alias":"ILSCNOUZ"},"commandType":"Sync"}
+[20210414 17:41:02] WorkMainActivity: newMessage: sync
+[20210414 17:41:04] WorkMainActivity: sync posizione: {"id":43,"worker_id":55,"position":-1}
+[20210414 17:41:04] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210414 17:41:10] BLEService: stop scan...
+[20210414 17:41:10] BLEService: stopScan: shouldScan: true
+[20210414 17:41:10] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:41:10] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:41:10] BLEService: No sector. Alarms will not be sent
+[20210414 17:41:52] BLEService: start scan...
+[20210414 17:44:45] BLEService: stop scan...
+[20210414 17:44:45] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210414 17:44:45] BLEService: stopScan: shouldScan: true
+[20210414 17:44:45] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:44:45] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:44:45] BLEService: No sector. Alarms will not be sent
+[20210414 17:45:25] BLEService: start scan...
+[20210414 17:48:24] BLEService: stop scan...
+[20210414 17:48:34] BLEService: stopScan: shouldScan: true
+[20210414 17:48:34] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:48:34] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:48:34] BLEService: No sector. Alarms will not be sent
+[20210414 17:48:34] MqttHelper: connectionLost: Connection to broker lost: Connection lost (32109) - java.io.EOFException
+[20210414 17:48:34] WorkMainActivity: onConnectionLost: mqtt
+[20210414 17:48:34] Utils: update-timer: Lock acquired
+[20210414 17:48:36] MqttHelper: connected complete. Is it a reconnect? true
+[20210414 17:48:36] MqttHelper: subscribeToTopic: subscribing
+[20210414 17:48:36] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210414 17:48:36] MqttHelper: onSuccess: MQTT Subscribed!
+[20210414 17:49:14] BLEService: start scan...
+[20210414 17:51:03] Utils: update-timer: Lock acquired
+[20210414 17:51:03] UpdateListener: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210414 17:51:03] UpdateListener: Next alarm in 600000 seconds
+[20210414 17:51:03] UpdateListener: uwb: sendTrace: health: true; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":100,"beacons":[],"clientId":"55","dpi":[]}
+[20210414 17:51:03] MqttHelper: publishTrace: message: {"linkKeep":null,"tag":[],"alias":"ILSCNOUZ","battery":100,"beacons":[],"clientId":"55","dpi":[],"healthData":null}
+[20210414 17:51:03] MqttHelper: onSuccess: message published: PUBACK msgId 34; coda: 0
+[20210414 17:51:03] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210414 17:51:03] MqttHelper: deliveryComplete: PUBACK msgId 34
+[20210414 17:51:03] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ILSCNOUZ"}}
+[20210414 17:51:03] WorkMainActivity: newMessage: {"additionalData":{"alias":"ILSCNOUZ"},"commandType":"Sync"}
+[20210414 17:51:03] WorkMainActivity: newMessage: sync
+[20210414 17:51:06] WorkMainActivity: sync posizione: {"id":43,"worker_id":55,"position":-1}
+[20210414 17:51:06] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210414 17:51:12] BLEService: stop scan...
+[20210414 17:51:12] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210414 17:51:12] BLEService: stopScan: shouldScan: true
+[20210414 17:51:12] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:51:12] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:51:12] BLEService: No sector. Alarms will not be sent
+[20210414 17:51:54] BLEService: start scan...
+[20210414 17:54:42] BLEService: stop scan...
+[20210414 17:54:42] BLEService: stopScan: shouldScan: true
+[20210414 17:54:42] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:54:42] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:54:42] BLEService: No sector. Alarms will not be sent
+[20210414 17:55:24] BLEService: start scan...
+[20210414 17:58:09] BLEService: stop scan...
+[20210414 17:58:10] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210414 17:58:10] BLEService: stopScan: shouldScan: true
+[20210414 17:58:10] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:58:10] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:58:10] BLEService: No sector. Alarms will not be sent
+[20210414 17:58:34] MqttHelper: connectionLost: Connection to broker lost: Connection lost (32109) - java.io.EOFException
+[20210414 17:58:34] WorkMainActivity: onConnectionLost: mqtt
+[20210414 17:58:34] Utils: update-timer: Lock acquired
+[20210414 17:58:36] MqttHelper: connected complete. Is it a reconnect? true
+[20210414 17:58:36] MqttHelper: subscribeToTopic: subscribing
+[20210414 17:58:36] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210414 17:58:36] MqttHelper: onSuccess: MQTT Subscribed!
+[20210414 17:58:50] BLEService: start scan...
+[20210414 17:59:10] BLEService: stop scan...
+[20210414 17:59:10] BLEService: stopScan: shouldScan: true
+[20210414 17:59:10] BLEService: stopScan: next scan in : 40 seconds
+[20210414 17:59:10] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210414 17:59:10] BLEService: No sector. Alarms will not be sent
+[20210414 17:59:52] BLEService: start scan...

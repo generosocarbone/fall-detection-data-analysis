@@ -1,0 +1,21 @@
+[20210415 15:10:53] APP: Application started
+[20210415 15:10:59] WizardPinFragment: Connection not ready
+[20210415 15:11:01] WizardPinFragment: No sim found. Configuring wifi...
+[20210415 15:11:11] WizardPinFragment: Connection not ready
+[20210415 15:11:13] APP: Application started
+[20210415 15:15:01] APP: Application started
+[20210415 15:15:26] WizardPinFragment: Connection not ready
+[20210415 15:15:28] WizardPinFragment: No sim found. Configuring wifi...
+[20210415 15:41:17] APP: Application started
+[20210415 15:41:19] WizardPinFragment: Connection not ready
+[20210415 15:41:21] WizardPinFragment: No sim found. Configuring wifi...
+[20210415 15:41:56] WizardPinFragment: Connection ready
+[20210415 15:43:16] WizardPinFragment: Connection not ready
+[20210415 15:43:18] WizardPinFragment: No sim found. Configuring wifi...
+[20210415 15:43:20] WizardPinFragment: Connection ready
+[20210415 15:44:13] WizardPinFragment: Connection not ready
+[20210415 15:44:15] WizardPinFragment: No sim found. Configuring wifi...
+[20210415 15:44:31] WizardPinFragment: Connection ready
+[20210415 15:45:15] WizardPinFragment: Connection not ready
+[20210415 15:45:17] WizardPinFragment: No sim found. Configuring wifi...
+[20210415 15:54:32] WizardPinFragment: Connection ready

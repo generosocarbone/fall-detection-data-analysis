@@ -29,8 +29,8 @@ MIN_SQM = 1.0
 MAX_SPIKES = 2
 
 MEDIANA_INTERVAL_SIZE = 17
-LOWER_BOUND_MEDIANA = 0.89
-UPPER_BOUND_MEDIANA = 1.13
+LOWER_BOUND_MEDIANA = 0.93
+UPPER_BOUND_MEDIANA = 1.03
 
 acceleration_impact_analyzed = 0
 
@@ -66,9 +66,9 @@ def analyze_dataframe_for_fall_index(df, title):
 
         acceleration_impact_analyzed = acceleration_impact_analyzed + 1
         subset = df[i - 10:i + 26]
-        csv_name = 'no-name/fall_20210402/subset_{}_index.csv'.format(i)
+        csv_name = 'davide/fall_20210413/subset_{}_index.csv'.format(i)
         subset.to_csv(csv_name, sep = ';', index = False)
-        analyze_dataframe_from_csv_name('no-name/fall_20210402/subset_{}_index.csv'.format(i))
+        analyze_dataframe_from_csv_name('davide/fall_20210413/subset_{}_index.csv'.format(i))
 
     print('___acceleration_impact_analyzed: {}'.format(acceleration_impact_analyzed))
 
@@ -136,10 +136,10 @@ def analyze_dataframe_from_csv_name(csv_name):
 
 
 
-csv_name='fall_20210402_stasi_9'
-riposo = pandas.read_csv('no-name/fall_20210402/{}.csv'.format(csv_name), sep=';')
-# analyze_dataframe_for_fall_index(riposo, csv_name)
-analyze_dataframe(riposo, csv_name)
+csv_name='fall_20210413.shock'
+riposo = pandas.read_csv('davide/fall_20210413/{}.csv'.format(csv_name), sep=';')
+analyze_dataframe_for_fall_index(riposo, csv_name)
+# analyze_dataframe(riposo, csv_name)
 
 
 print("\n==================== NEW RUN ====================\n")
@@ -170,7 +170,7 @@ print('_MEDIANA_INTERVAL_SIZE: {}'.format(MEDIANA_INTERVAL_SIZE))
 print('_LOWER_BOUND_MEDIANA: {}'.format(LOWER_BOUND_MEDIANA))
 print('_UPPER_BOUND_MEDIANA: {}'.format(UPPER_BOUND_MEDIANA))
 
-riposo = pandas.read_csv('no-name/fall_20210402/{}.csv'.format(csv_name), sep=';')
+riposo = pandas.read_csv('davide/fall_20210413/{}.csv'.format(csv_name), sep=';')
 # analyze_dataframe_for_fall_index(riposo, csv_name)
 analyze_dataframe(riposo, csv_name)
 # plt.show()

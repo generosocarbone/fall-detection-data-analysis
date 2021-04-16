@@ -1,0 +1,13 @@
+[20210415 13:17:03] APP: Application started
+[20210415 13:17:51] WizardPinFragment: Connection ready
+[20210415 13:18:19] WizardPinFragment: Connection ready
+[20210415 13:18:58] WizardPinFragment: Connection ready
+[20210415 13:19:43] WizardPinFragment: Connection ready
+[20210415 13:21:52] APP: Application started
+[20210415 13:21:54] WizardPinFragment: Connection ready
+[20210415 13:23:00] WizardPinFragment: Connection ready
+[20210415 13:26:24] WizardPinFragment: Connection ready
+[20210415 13:35:42] WizardPinFragment: Connection ready
+[20210415 13:37:51] WizardPinFragment: Connection ready
+[20210415 13:39:55] WizardPinFragment: Connection ready
+[20210415 13:45:53] WizardPinFragment: Connection ready

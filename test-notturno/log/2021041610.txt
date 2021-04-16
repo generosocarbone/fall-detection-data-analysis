@@ -1,0 +1,98 @@
+[20210416 10:27:01] APP: Application started
+[20210416 10:27:02] WorkMainActivity: main activity started
+[20210416 10:27:02] WorkMainActivity: elapsed Realtime: 4837736
+[20210416 10:27:03] FallDetector: FallDetector{calX=0.0, calY=0.0, calZ=0.0, ACCELERATION_FREE_FALL=2.943, ACCELERATION_SHOCK_FREE_FALL=19.1295, ACCELERATION_DIRECT_SHOCK=24.525000000000002, MIN_SQM=1.0, MAX_SPIKES=2.0, MIN_FILTERED=17, MEDIANA_LOWER_BOUND=0.93, MEDIANA_UPPER_BOUND=1.03, MODEL=X360(X361), MANUFACTURER=alps, SDK_INT=25}
+[20210416 10:27:03] BLEService: onCreate
+[20210416 10:27:03] BLEService: onStartCommand
+[20210416 10:27:03] ConnectionListener: RESTRICT_BACKGROUNDRESTRICT_BACKGROUND_STATUS_ENABLED_STATUS_DISABLED
+[20210416 10:27:03] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 10:27:03] BLEService: start scan...
+[20210416 10:27:04] WorkMainActivity: goToRemoteBroker: 
+[20210416 10:27:04] MqttHelper: MqttHelper: cd.mqtt: {"events":"ww_events","port":9001,"publish":"ww","subscribe":"ww_alarms","token":"$2a$12$120l5LiIwxWwfEIJD9NznumsJnlbhTWC2Mel0Fh4G/gzpab5dvzRu","url":"stream.lifesensor.cloud"}
+[20210416 10:27:04] MqttHelper: MqttHelper: uri: ws://stream.lifesensor.cloud:9001
+[20210416 10:27:04] MqttHelper: connect: connecting...
+[20210416 10:27:04] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 10:27:05] MqttHelper: onSuccess: connected
+[20210416 10:27:05] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210416 10:27:05] MqttHelper: connected complete. Is it a reconnect? false
+[20210416 10:27:05] MqttHelper: subscribeToTopic: subscribing
+[20210416 10:27:05] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210416 10:27:05] MqttHelper: onSuccess: MQTT Subscribed!
+[20210416 10:27:23] Utils: update-timer: Lock acquired
+[20210416 10:27:23] UpdateListener: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 10:27:23] UpdateListener: Next alarm in 600000 seconds
+[20210416 10:27:23] UpdateListener: uwb: sendTrace: health: true; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":93,"beacons":[],"clientId":"55","dpi":[]}
+[20210416 10:27:23] MqttHelper: publishTrace: message: {"linkKeep":null,"tag":[],"alias":"ILSCNOUZ","battery":93,"beacons":[],"clientId":"55","dpi":[],"healthData":null}
+[20210416 10:27:23] MqttHelper: onSuccess: message published: PUBACK msgId 2; coda: 0
+[20210416 10:27:23] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210416 10:27:23] MqttHelper: deliveryComplete: PUBACK msgId 2
+[20210416 10:27:23] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ILSCNOUZ"}}
+[20210416 10:27:23] WorkMainActivity: newMessage: {"additionalData":{"alias":"ILSCNOUZ"},"commandType":"Sync"}
+[20210416 10:27:23] WorkMainActivity: newMessage: sync
+[20210416 10:27:24] BLEService: stop scan...
+[20210416 10:27:24] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210416 10:27:24] BLEService: stopScan: shouldScan: true
+[20210416 10:27:24] BLEService: stopScan: next scan in : 40 seconds
+[20210416 10:27:24] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 10:27:24] BLEService: No sector. Alarms will not be sent
+[20210416 10:27:24] WorkMainActivity: sync posizione: {"id":43,"worker_id":55,"position":-1}
+[20210416 10:27:25] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 10:27:42] WorkMainActivity: onHome: onDestroy
+[20210416 10:27:42] BLEService: onTaskRemoved
+[20210416 10:27:42] BLEService: onDestroy
+[20210416 10:42:49] APP: Application started
+[20210416 10:42:49] WorkMainActivity: main activity started
+[20210416 10:42:49] WorkMainActivity: elapsed Realtime: 5784823
+[20210416 10:42:50] FallDetector: FallDetector{calX=0.0, calY=0.0, calZ=0.0, ACCELERATION_FREE_FALL=2.943, ACCELERATION_SHOCK_FREE_FALL=19.1295, ACCELERATION_DIRECT_SHOCK=24.525000000000002, MIN_SQM=1.0, MAX_SPIKES=2.0, MIN_FILTERED=17, MEDIANA_LOWER_BOUND=0.93, MEDIANA_UPPER_BOUND=1.03, MODEL=X360(X361), MANUFACTURER=alps, SDK_INT=25}
+[20210416 10:42:50] BLEService: onCreate
+[20210416 10:42:50] BLEService: onStartCommand
+[20210416 10:42:50] ConnectionListener: RESTRICT_BACKGROUNDRESTRICT_BACKGROUND_STATUS_ENABLED_STATUS_DISABLED
+[20210416 10:42:50] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 10:42:50] BLEService: start scan...
+[20210416 10:42:50] WorkMainActivity: goToRemoteBroker: 
+[20210416 10:42:51] MqttHelper: MqttHelper: cd.mqtt: {"events":"ww_events","port":9001,"publish":"ww","subscribe":"ww_alarms","token":"$2a$12$120l5LiIwxWwfEIJD9NznumsJnlbhTWC2Mel0Fh4G/gzpab5dvzRu","url":"stream.lifesensor.cloud"}
+[20210416 10:42:51] MqttHelper: MqttHelper: uri: ws://stream.lifesensor.cloud:9001
+[20210416 10:42:51] MqttHelper: connect: connecting...
+[20210416 10:42:51] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 10:42:52] MqttHelper: onSuccess: connected
+[20210416 10:42:52] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210416 10:42:52] MqttHelper: connected complete. Is it a reconnect? false
+[20210416 10:42:52] MqttHelper: subscribeToTopic: subscribing
+[20210416 10:42:52] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210416 10:42:53] MqttHelper: onSuccess: MQTT Subscribed!
+[20210416 10:43:10] Utils: update-timer: Lock acquired
+[20210416 10:43:10] UpdateListener: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 10:43:10] UpdateListener: Next alarm in 600000 seconds
+[20210416 10:43:10] UpdateListener: uwb: sendTrace: health: true; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":100,"beacons":[],"clientId":"55","dpi":[]}
+[20210416 10:43:10] MqttHelper: publishTrace: message: {"linkKeep":null,"tag":[],"alias":"ILSCNOUZ","battery":100,"beacons":[],"clientId":"55","dpi":[],"healthData":null}
+[20210416 10:43:10] MqttHelper: onSuccess: message published: PUBACK msgId 2; coda: 0
+[20210416 10:43:10] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210416 10:43:10] MqttHelper: deliveryComplete: PUBACK msgId 2
+[20210416 10:43:10] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ILSCNOUZ"}}
+[20210416 10:43:10] WorkMainActivity: newMessage: {"additionalData":{"alias":"ILSCNOUZ"},"commandType":"Sync"}
+[20210416 10:43:10] WorkMainActivity: newMessage: sync
+[20210416 10:43:10] BLEService: stop scan...
+[20210416 10:43:10] BLEService: stopScan: shouldScan: true
+[20210416 10:43:10] BLEService: stopScan: next scan in : 40 seconds
+[20210416 10:43:11] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 10:43:11] BLEService: No sector. Alarms will not be sent
+[20210416 10:43:11] WorkMainActivity: sync posizione: {"id":43,"worker_id":55,"position":-1}
+[20210416 10:43:11] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 10:43:51] BLEService: start scan...
+[20210416 10:43:55] WorkMainActivity: Screen off
+[20210416 10:43:55] Utils: update-timer: Lock acquired
+[20210416 10:44:11] BLEService: stop scan...
+[20210416 10:44:11] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210416 10:44:11] BLEService: stopScan: shouldScan: true
+[20210416 10:44:11] BLEService: stopScan: next scan in : 40 seconds
+[20210416 10:44:11] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 10:44:11] BLEService: No sector. Alarms will not be sent
+[20210416 10:44:53] BLEService: start scan...
+[20210416 10:46:10] BLEService: stop scan...
+[20210416 10:46:10] BLEService: stopScan: shouldScan: true
+[20210416 10:46:10] BLEService: stopScan: next scan in : 40 seconds
+[20210416 10:46:10] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 10:46:10] BLEService: No sector. Alarms will not be sent
+[20210416 10:46:32] WorkMainActivity: onHome: onDestroy
+[20210416 10:46:32] BLEService: onTaskRemoved
+[20210416 10:46:32] BLEService: onDestroy

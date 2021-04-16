@@ -53,7 +53,7 @@ def set_parameters(csv_path, csv_name, G, ACCELERATION_IMPACT_COEFFICIENT, ACCEL
     extract_stasis(stasi, csv_name, csv_path, ACCELERATION_IMPACT)
 
 
-csv_path='ato-2/fall_20210406'
-csv_name='fall_20210406'
-ACC = 2.5
-set_parameters(csv_path, csv_name, 9.81, ACC, 0.3, 1.0, 2, 17, 0.89, 1.13)
+csv_path='davide/fall_20210413'
+csv_name='fall_20210413.shock'
+ACC = 3
+set_parameters(csv_path, csv_name, 9.81, ACC, 0.3, 1.0, 2, 17, 0.93, 1.03)

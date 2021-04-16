@@ -1,0 +1,7 @@
+[20210415 16:03:49] WizardPinFragment: Connection not ready
+[20210415 16:03:51] WizardPinFragment: No sim found. Configuring wifi...
+[20210415 16:07:17] APP: Application started
+[20210415 16:08:13] APP: Application started
+[20210415 16:08:56] APP: Application started
+[20210415 16:08:58] WizardPinFragment: Connection ready
+[20210415 16:10:51] APP: Application started

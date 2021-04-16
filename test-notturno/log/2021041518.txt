@@ -1,0 +1,76 @@
+[20210415 18:30:23] APP: Application started
+[20210415 18:39:53] FallDetector: FallDetector{calX=0.0, calY=0.0, calZ=0.0, MAX_A=19.1295, MIN_SQM=1.0, MAX_SPIKES=2.0, MIN_MEDIANA=9.1233, MAX_MEDIANA=10.1043, MIN_FILTERED=17, MIN_FILTER=9.1233, MAX_FILTER=10.1043, MODEL=X360(X361), MANUFACTURER=alps, SDK_INT=25}
+[20210415 18:40:16] FallDetector: calibrazione: normX: 0.493180; normY: 0.189480; normZ: -0.029299; counter: 50
+[20210415 18:40:16] WorkMainActivity: main activity started
+[20210415 18:40:16] WorkMainActivity: elapsed Realtime: 19654656
+[20210415 18:40:16] FallDetector: FallDetector{calX=0.0, calY=0.0, calZ=0.0, MAX_A=19.1295, MIN_SQM=1.0, MAX_SPIKES=2.0, MIN_MEDIANA=9.1233, MAX_MEDIANA=10.1043, MIN_FILTERED=17, MIN_FILTER=9.1233, MAX_FILTER=10.1043, MODEL=X360(X361), MANUFACTURER=alps, SDK_INT=25}
+[20210415 18:40:17] BLEService: onCreate
+[20210415 18:40:17] BLEService: onStartCommand
+[20210415 18:40:17] ConnectionListener: RESTRICT_BACKGROUNDRESTRICT_BACKGROUND_STATUS_ENABLED_STATUS_DISABLED
+[20210415 18:40:17] BLEService: No settings available. Using default settings: Settings{bleScanDuration: 20000, bleNoScanDuration: 600000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: 240000}
+[20210415 18:40:17] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 600000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: 240000}
+[20210415 18:40:17] BLEService: start scan...
+[20210415 18:40:17] WorkMainActivity: goToRemoteBroker: 
+[20210415 18:40:17] MqttHelper: MqttHelper: cd.mqtt: {"events":"ww_events","port":9001,"publish":"ww","subscribe":"ww_alarms","token":"$2a$12$120l5LiIwxWwfEIJD9NznumsJnlbhTWC2Mel0Fh4G/gzpab5dvzRu","url":"stream.lifesensor.cloud"}
+[20210415 18:40:17] MqttHelper: MqttHelper: uri: ws://stream.lifesensor.cloud:9001
+[20210415 18:40:17] MqttHelper: connect: connecting...
+[20210415 18:40:19] MqttHelper: onSuccess: connected
+[20210415 18:40:19] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210415 18:40:19] MqttHelper: connected complete. Is it a reconnect? false
+[20210415 18:40:19] MqttHelper: subscribeToTopic: subscribing
+[20210415 18:40:19] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210415 18:40:19] MqttHelper: onSuccess: MQTT Subscribed!
+[20210415 18:40:36] Utils: update-timer: Lock acquired
+[20210415 18:40:36] UpdateListener: Settings{bleScanDuration: 20000, bleNoScanDuration: 600000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: 240000}
+[20210415 18:40:36] UpdateListener: Next alarm in 600000 seconds
+[20210415 18:40:36] UpdateListener: uwb: sendTrace: health: false; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":94,"beacons":[],"clientId":"55","dpi":[]}
+[20210415 18:40:37] BLEService: stop scan...
+[20210415 18:40:37] BLEService: stopScan: shouldScan: true
+[20210415 18:40:37] BLEService: stopScan: next scan in : 600 seconds
+[20210415 18:40:37] BLEService: stopScan: alarm for: D1:B3:CD:75:93:DE (GILET)
+[20210415 18:40:37] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210415 18:40:37] BLEService: stopScan: alarm for: D1:2A:09:74:B1:87 (SHOES)
+[20210415 18:40:37] BLEService: No sector. Alarms will not be sent
+[20210415 18:40:45] UpdateListener: uwb: sendTrace: health: true; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":94,"beacons":[],"clientId":"55","dpi":[],"healthData":[{"alias":"ILSCNOUZ","date":"2021-03-15 18:40:00","diastolic":0,"error":"NOT_WEAR","heartRate":0,"oxygen":0,"sleep":{"date":"","deepSleep":0,"lowSleep":0,"quality":0,"sleepTime":0,"wakeCount":0},"steps":0,"systolic":0,"timestamp":1618504845884}]}
+[20210415 18:40:45] MqttHelper: publishTrace: message: {"linkKeep":null,"tag":[],"alias":"ILSCNOUZ","battery":94,"beacons":[],"clientId":"55","dpi":[],"healthData":[{"alias":"ILSCNOUZ","date":"2021-03-15 18:40:00","diastolic":0,"error":"NOT_WEAR","heartRate":0,"oxygen":0,"sleep":{"date":"","deepSleep":0,"lowSleep":0,"quality":0,"sleepTime":0,"wakeCount":0},"steps":0,"systolic":0,"timestamp":1618504845884}]}
+[20210415 18:40:45] UpdateListener: No, abbiamo un tag operaio
+[20210415 18:40:46] MqttHelper: onSuccess: message published: PUBACK msgId 2; coda: 0
+[20210415 18:40:46] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210415 18:40:46] MqttHelper: deliveryComplete: PUBACK msgId 2
+[20210415 18:40:46] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ILSCNOUZ"}}
+[20210415 18:40:46] WorkMainActivity: newMessage: {"additionalData":{"alias":"ILSCNOUZ"},"commandType":"Sync"}
+[20210415 18:40:46] WorkMainActivity: newMessage: sync
+[20210415 18:40:52] WorkMainActivity: sync posizione: {"id":43,"worker_id":55,"position":-1}
+[20210415 18:40:52] BLEService: No settings available. Using default settings: Settings{bleScanDuration: 20000, bleNoScanDuration: 600000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: 240000}
+[20210415 18:40:52] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 600000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: 240000}
+[20210415 18:41:07] WorkMainActivity: Screen off
+[20210415 18:41:07] Utils: update-timer: Lock acquired
+[20210415 18:43:26] MqttHelper: messageArrived: parsed: {"commandType":"Alarm","additionalData":{"danger":"SoundSensor","area":1,"collectionPoint":null}}
+[20210415 18:43:26] WorkMainActivity: newMessage: {"additionalData":{"area":1},"commandType":"Alarm"}
+[20210415 18:46:05] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"DLWUCFBW"}}
+[20210415 18:46:05] WorkMainActivity: newMessage: {"additionalData":{"alias":"DLWUCFBW"},"commandType":"Sync"}
+[20210415 18:46:05] WorkMainActivity: newMessage: sync
+[20210415 18:50:38] Utils: update-timer: Lock acquired
+[20210415 18:50:38] UpdateListener: Settings{bleScanDuration: 20000, bleNoScanDuration: 600000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: 240000}
+[20210415 18:50:38] UpdateListener: Next alarm in 600000 seconds
+[20210415 18:50:38] UpdateListener: uwb: sendTrace: health: false; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":93,"beacons":[],"clientId":"55","dpi":[]}
+[20210415 18:50:48] UpdateListener: uwb: sendTrace: health: true; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":93,"beacons":[],"clientId":"55","dpi":[],"healthData":[{"alias":"ILSCNOUZ","date":"2021-03-15 18:50:00","diastolic":0,"error":"NOT_WEAR","heartRate":0,"oxygen":0,"steps":0,"systolic":0,"timestamp":1618505448738}]}
+[20210415 18:50:48] MqttHelper: publishTrace: message: {"linkKeep":null,"tag":[],"alias":"ILSCNOUZ","battery":93,"beacons":[],"clientId":"55","dpi":[],"healthData":[{"alias":"ILSCNOUZ","date":"2021-03-15 18:50:00","diastolic":0,"error":"NOT_WEAR","heartRate":0,"oxygen":0,"sleep":null,"steps":0,"systolic":0,"timestamp":1618505448738}]}
+[20210415 18:50:48] UpdateListener: No, abbiamo un tag operaio
+[20210415 18:50:49] MqttHelper: onSuccess: message published: PUBACK msgId 3; coda: 0
+[20210415 18:50:49] WorkMainActivity: onConnectionSuccess: resetting retry
+[20210415 18:50:49] MqttHelper: deliveryComplete: PUBACK msgId 3
+[20210415 18:50:49] MqttHelper: messageArrived: parsed: {"commandType":"Sync","additionalData":{"alias":"ILSCNOUZ"}}
+[20210415 18:50:49] WorkMainActivity: newMessage: {"additionalData":{"alias":"ILSCNOUZ"},"commandType":"Sync"}
+[20210415 18:50:49] WorkMainActivity: newMessage: sync
+[20210415 18:50:54] WorkMainActivity: sync posizione: {"id":43,"worker_id":55,"position":-1}
+[20210415 18:50:54] BLEService: No settings available. Using default settings: Settings{bleScanDuration: 20000, bleNoScanDuration: 600000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: 240000}
+[20210415 18:50:54] BLEService: Settings{bleScanDuration: 20000, bleNoScanDuration: 600000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: 240000}
+[20210415 18:51:00] BLEService: start scan...
+[20210415 18:51:37] BLEService: stop scan...
+[20210415 18:51:38] BLEService: stopScan: shouldScan: true
+[20210415 18:51:38] BLEService: stopScan: next scan in : 600 seconds
+[20210415 18:51:38] BLEService: stopScan: alarm for: D1:B3:CD:75:93:DE (GILET)
+[20210415 18:51:38] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210415 18:51:38] BLEService: stopScan: alarm for: D1:2A:09:74:B1:87 (SHOES)
+[20210415 18:51:38] BLEService: No sector. Alarms will not be sent

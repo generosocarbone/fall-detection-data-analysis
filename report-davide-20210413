@@ -1,0 +1,51 @@
+True Positive (TP): Caduta vera rilevata
+True Negative (TN): Caduta finta non rilevata
+False Positive (FP): Caduta finta rilevata
+False Negative (FN): Caduta vera non rilevata
+
+47 Eventi: 33 free fall e 14 shock per un totale di 5 FP
+
+__Free fall
+Su 33 eventi ce ne sono stati
+27 senza impatto
+6 con impatto
+
+Di questi 6 con impatto
+Abbiamo avuto 3 FP e 3 TN
+
+__Shock
+Su 14 eventi ci sono stati 2 FP e 12 TN
+
+Questi sono gli eventi che hanno causato uno shock e che hanno portato, in parte, ad un FP
+[20210413 14:53:33]	-1.684;20.669;17.427;27.088;shock no free fall check for stasis
+[20210413 14:54:23]	-2.575;9.196;24.342;26.148;shock no free fall check for stasis
+[20210413 14:58:42]	24.958;31.003;12.639;41.759;shock no free fall check for stasis
+[20210413 15:02:06]	-10.447;25.659;-1.736;27.758;shock no free fall check for stasis
+[20210413 16:09:31]	-5.994;25.477;-5.145;26.673;shock no free fall check for stasis
+[20210413 17:23:29]	11.781;25.755;1.185;28.346;shock no free fall check for stasis
+[20210413 17:47:13]	8.639;-11.624;21.277;25.738;shock no free fall check for stasis
+[20210413 18:21:09]	1.562;24.548;-8.220;25.935;shock no free fall check for stasis
+[20210413 18:31:09]	-6.818;23.743;6.404;25.519;shock no free fall check for stasis
+[20210413 18:51:05]	25.437;-2.727;2.171;25.675;shock no free fall check for stasis
+[20210413 19:02:53]	-6.626;24.308;0.696;25.205;shock no free fall check for stasis
+[20210413 19:04:06]	7.155;26.243;-1.631;27.250;shock no free fall check for stasis
+[20210413 19:12:09]	-2.211;32.343;9.545;33.795;shock no free fall check for stasis
+[20210413 19:22:53]	0.633;7.750;30.136;31.123;shock no free fall check for stasis
+[20210413 15:14:00]	-1.033;3.709;23.058;23.377;shock T_DURATION: 1439
+[20210413 15:57:10]	11.350;25.879;18.155;33.588;shock T_DURATION: 212
+[20210413 16:47:36]	4.062;19.319;4.585;20.267;shock T_DURATION: 799
+[20210413 16:48:31]	1.763;25.199;-3.891;25.559;shock T_DURATION: 2672
+[20210413 18:16:52]	-0.056;25.161;2.640;25.299;shock T_DURATION: 210
+[20210413 14:27:33]	-18.022;-2.717;9.191;20.412;shock T_DURATION: 200
+
+Confrontiamoli con alcuni dati di cadute vere registrate con il manichino
+[20210319 16:26:33]	-38.300	37.517	-38.753	66.152	shock no free fall check for stasis
+[20210319 16:16:26]	10.906	-37.949	-38.753	55.325	shock no free fall check for stasis
+[20210319 16:20:19]	-21.320	-34.166	-34.491	53.023	shock T_DURATION: 809
+[20210319 15:59:57]	-3.296	16.486	-23.449	28.853	shock no free fall check for stasis
+[20210319 16:27:21]	-23.839	6.430	-22.731	33.561	shock no free fall check for stasis
+[20210319 16:17:21]	20.128	-20.318	-9.946	30.280	shock no free fall check for stasis
+[20210319 15:58:56]	-31.998;1.259;1.882;32.078;shock T_DURATION: 398
+[20210319 16:28:20]	-38.300	37.517	4.190	53.777	shock no free fall check for stasis
+[20210319 16:18:50]	5.658	-18.412	29.243	35.016	shock no free fall check for stasis
+[20210319 16:02:19]	38.305	38.407	37.852	66.145	shock no free fall check for stasis

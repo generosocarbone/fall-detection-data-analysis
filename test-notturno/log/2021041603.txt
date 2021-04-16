@@ -1,0 +1,49 @@
+[20210416 03:00:01] BLEService: start scan...
+[20210416 03:08:14] BLEService: stop scan...
+[20210416 03:08:14] BLEService: stopScan: shouldScan: true
+[20210416 03:08:14] BLEService: stopScan: next scan in : 80 seconds
+[20210416 03:08:14] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 03:08:14] BLEService: No sector. Alarms will not be sent
+[20210416 03:08:54] Utils: update-timer: Lock acquired
+[20210416 03:08:54] UpdateListener: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 03:08:54] UpdateListener: Next alarm in 1500000 seconds
+[20210416 03:08:54] UpdateListener: uwb: sendTrace: health: true; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":4,"beacons":[],"clientId":"55","dpi":[]}
+[20210416 03:08:54] MqttHelper: publishTrace: message: {"linkKeep":null,"tag":[],"alias":"ILSCNOUZ","battery":4,"beacons":[],"clientId":"55","dpi":[],"healthData":null}
+[20210416 03:08:54] MqttHelper: publish: not connected to broker. Message will be sent asap...
+[20210416 03:08:54] MqttHelper: publish: onFailure: message push failure: null; org.eclipse.paho.android.service.MqttDeliveryTokenAndroid@7ceb09f
+[20210416 03:09:15] WorkMainActivity: Screen off
+[20210416 03:09:15] Utils: update-timer: Lock acquired
+[20210416 03:09:34] BLEService: start scan...
+[20210416 03:09:54] BLEService: stop scan...
+[20210416 03:09:55] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210416 03:09:55] BLEService: stopScan: shouldScan: true
+[20210416 03:09:55] BLEService: stopScan: next scan in : 80 seconds
+[20210416 03:09:55] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 03:09:55] BLEService: No sector. Alarms will not be sent
+[20210416 03:11:16] BLEService: start scan...
+[20210416 03:21:15] BLEService: stop scan...
+[20210416 03:21:15] BLEService: stopScan: shouldScan: true
+[20210416 03:21:15] BLEService: stopScan: next scan in : 80 seconds
+[20210416 03:21:15] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 03:21:15] BLEService: No sector. Alarms will not be sent
+[20210416 03:22:36] BLEService: start scan...
+[20210416 03:33:55] Utils: update-timer: Lock acquired
+[20210416 03:33:55] UpdateListener: Settings{bleScanDuration: 20000, bleNoScanDuration: 40000, linkKeepOffset: 600000, lowEnergyDelay: 600000, gpsFixDuration: -1}
+[20210416 03:33:55] UpdateListener: Next alarm in 1500000 seconds
+[20210416 03:33:55] UpdateListener: uwb: sendTrace: health: true; dpi: true; location: true; {"tag":[],"alias":"ILSCNOUZ","battery":1,"beacons":[],"clientId":"55","dpi":[]}
+[20210416 03:33:55] MqttHelper: publishTrace: message: {"linkKeep":null,"tag":[],"alias":"ILSCNOUZ","battery":1,"beacons":[],"clientId":"55","dpi":[],"healthData":null}
+[20210416 03:33:55] MqttHelper: publish: not connected to broker. Message will be sent asap...
+[20210416 03:33:55] MqttHelper: publish: onFailure: message push failure: null; org.eclipse.paho.android.service.MqttDeliveryTokenAndroid@be2ad50
+[20210416 03:34:01] BLEService: stop scan...
+[20210416 03:34:01] BLEService: NON LOCALIZZATO PER DUE SCANSIONI: NON MONITORO I DPI e RESETTO L'ULTIMA SUBZONA
+[20210416 03:34:01] BLEService: stopScan: shouldScan: true
+[20210416 03:34:01] BLEService: stopScan: next scan in : 80 seconds
+[20210416 03:34:01] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 03:34:01] BLEService: No sector. Alarms will not be sent
+[20210416 03:35:23] BLEService: start scan...
+[20210416 03:47:23] BLEService: stop scan...
+[20210416 03:47:23] BLEService: stopScan: shouldScan: true
+[20210416 03:47:23] BLEService: stopScan: next scan in : 80 seconds
+[20210416 03:47:23] BLEService: stopScan: alarm for: F1:18:45:D1:C4:7A (HELMET)
+[20210416 03:47:23] BLEService: No sector. Alarms will not be sent
+[20210416 03:48:44] BLEService: start scan...

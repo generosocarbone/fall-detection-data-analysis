@@ -1,0 +1,2 @@
+[20210415 14:03:29] WizardPinFragment: Connection ready
+[20210415 14:19:02] WizardPinFragment: Connection ready

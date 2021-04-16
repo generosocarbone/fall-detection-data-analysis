@@ -1,0 +1,97 @@
+Descrizione test-1:
+- Entrambi i watch sono stati fatti cadere dalla stessa altezza nello stesso momento e sono atterrati sulla stessa superficie.
+- Il watch senza cinturino ha la versione 98
+- Il watch con cinturino ha la versione 101
+- Entrambi i watch sono alps x360
+- Numero di ripetizioni 10. A partire dalla quinta ripetizione ho contato fino a 10 prima di far cadere i watch.
+
+Esito del test:
+- v98: 5/10
+- v101: 4/10
+
+Prima lettura log
+Entrambi i watch hanno perso una traccia: vale a dire che non hanno rilevato né un'accelerazione da caduta libera né un'accelerazione da impatto
+Il v98 ha rilevato una traccia in più alle 16:37:41.
+
+_v98
+9 Tracce da caduta libera √
+1 Traccia persa †
+1 Traccia intrusa ? [da notare: TN]
+5 TP √
+4 FN † per mancanza di impatto
+
+_v101
+9 Tracce da caduta libera √
+1 Traccia persa †
+4 TP √
+5 FN † per mancanza di impatto
+
+
+La mancanza di impatto potrebbe dipendere dal fatto che i watch sono relativamente leggeri e la superficie di atterraggio è il materasso.
+
+################################################################################
+
+Descrizione test-2:
+- Entrambi i watch sono stati fatti cadere dalla stessa altezza nello stesso momento e sono atterrati sulla stessa superficie.
+- Il watch senza cinturino ha la versione 98
+- Il watch con cinturino ha la versione 101
+- Entrambi i watch sono alps x360
+- Numero di ripetizioni 10.
+- In questo test i watch sono caduti con lo schermo verso la superficie
+
+Esito del test:
+- v98: 6/10
+- v101: 1/10
+
+_v98
+10 Tracce da caduta libera √
+0 Traccia persa †
+1 Malfunzionamneto ? [da notare: non in fase di test]
+6 TP √
+4 FN † per mancanza di impatto
+
+_v101
+8 Tracce da caduta libera √
+2 Tracce perse †
+1 TP √
+7 FN † per mancanza di impatto
+
+Prima lettura log
+Rilevato 1 Malfunzionamento Sensore su v98
+Rilevato 1 Malfunzionamento Sensore su v101 alle 20210414 17:16:24 non segnalato
+
+################################################################################
+
+Descrizione test-3:
+- Entrambi i watch sono stati fatti cadere dalla stessa altezza di una scopa per simulare l'andamento del manichino
+- Il watch senza cinturino ha la versione 98
+- Il watch con cinturino ha la versione 101
+- Entrambi i watch sono alps x360
+- Numero di ripetizioni 20.
+- In questo test i watch sono caduti 10 volte frontalmente (schermo verso la superficie) e 10 volte all'indietro (schermo opposto alla superficie)
+
+Esito del test:
+- v98: 0/10 + 3/10
+- v101: 5/10 + 1/10
+
+_v98
+8 Tracce da caduta libera √
+5 tracce da shock √
+7 Tracce perse † o_O forse ho fatto gli esperimenti troppo ravvicinati
+3 TP √
+10 FN † di cui
+  - 4 per mancanza d'impatto
+  - 5 per Malfunzionamento sensore
+  - 1 per mediana troppo bassa (e sensore impallato per 4 secondi):
+    [20210414 19:09:25]	min: 8,730900; max: 11,085300; mediana: 4,563723; false;
+
+
+_v101
+14 Tracce da caduta libera √
+4 tracce da shock √
+2 Tracce perse †
+1 TP √
+7 FN † di cui
+  - 9 per mancanza d'impatto
+  - 3 per Malfunzionamento sensore, da verificare
+  - 1 per sqm inferiore a 1
