@@ -1,0 +1,68 @@
+MIN_MEDIANA: 9.1233
+MAX_MEDIANA: 10.300500000000001
+
+__dataframe: 102/movimenti__
+count    510.000000
+mean       9.796142
+std        0.357761
+min        7.743374
+10%        9.443515
+50%        9.810431
+90%       10.151961
+max       11.547011
+Name: x, dtype: float64
+
+__dataframe: 102/movimenti_2__
+count    2218.000000
+mean        9.917582
+std         0.367839
+min         7.994351
+10%         9.746041
+50%         9.924344
+90%        10.029836
+max        17.231572
+Name: x, dtype: float6
+
+__dataframe: 102/movimenti_3__
+count    4713.000000
+mean        9.905524
+std         0.358760
+min         6.428615
+10%         9.755465
+50%         9.902775
+90%        10.025632
+max        17.231572
+Name: x, dtype: float64
+
+__dataframe: 102/movimenti_4__
+count    5890.000000
+mean        9.916088
+std         0.274035
+min         6.515335
+10%         9.781639
+50%         9.911457
+90%        10.051926
+max        14.841253
+Name: x, dtype: float64
+
+__dataframe: 102/movimenti_x__
+count    7932.000000
+mean        9.895719
+std         0.369085
+min         5.411148
+10%         9.695792
+50%         9.894495
+90%        10.025111
+max        22.312084
+Name: x, dtype: float64
+
+__dataframe: 102/movimenti_ii__
+count    12344.000000
+mean         9.914449
+std          0.405806
+min          5.411148
+10%          9.705670
+50%          9.909766
+90%         10.033187
+max         22.312084
+Name: x, dtype: float64
