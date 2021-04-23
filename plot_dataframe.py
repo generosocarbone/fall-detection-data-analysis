@@ -1,15 +1,4 @@
-# python3 pandas_test.py
-# idea:  in base a quanto e come varia il fall index possiamo stabilire se si è verificata una caduta
-# Se c'è un picco che resta più o meno costante allora è possibile assumere che si sia verificata una caduta
-# Se c'è un picco che non resta costante anzi tende a decrescere, allora è possibile assumere che la
-# caduta non si sia verificata.
-# Una cosa che ho notato è che l'accelerometro non è costantente nel fornire i valori, ma tende ad accelerare
-# all'aumentare delle variazioni di accelerazione. Sembra valido per il mio samsung, non so se è un discorso
-# comune a tutti i dispositivi.
-
-# Fare un'implementazione per smartwatch in grado di fare dei run di misurazione molto lunghi e vedere come
-# si comporta il Fall Index nel tempo
-
+# python3 plot_dataframe.py
 
 
 import pandas
@@ -22,29 +11,20 @@ G = 9.81
 ACCELERATION_IMPACT_COEFFICIENT = 2.5
 ACCELERATION_FREE_FALL_COEFFICIENT = 0.3
 ACCELERATION_IMPACT = ACCELERATION_IMPACT_COEFFICIENT * G
-ACCELERATION_FREE_FALL = ACCELERATION_FREE_FALL_COEFFICIENT * G
+ACCELERATION_FREE_FALL = 14.37
 
 MIN_SQM = 1.0
 
 MAX_SPIKES = 2
 
-MEDIANA_INTERVAL_SIZE = 17
+MEDIANA_INTERVAL_SIZE = 15
 LOWER_BOUND_MEDIANA = 0.93
 UPPER_BOUND_MEDIANA = 1.03
 
 MIN_MEDIANA = G * 0.93;
-MAX_MEDIANA = G * 1.03;
+MAX_MEDIANA = G * 1.05;
 
 acceleration_impact_analyzed = 0
-
-# print('_G: {}'.format(G))
-# print('_ACCELERATION_IMPACT: {} ({})'.format(ACCELERATION_IMPACT, ACCELERATION_IMPACT_COEFFICIENT))
-# print('_ACCELERATION_FREE_FALL: {} ({})'.format(ACCELERATION_FREE_FALL, ACCELERATION_FREE_FALL_COEFFICIENT))
-# print('_MIN_SQM: {}'.format(MIN_SQM))
-# print('_MAX_SPIKES: {}'.format(MAX_SPIKES))
-# print('_MEDIANA_INTERVAL_SIZE: {}'.format(MEDIANA_INTERVAL_SIZE))
-# print('_LOWER_BOUND_MEDIANA: {}'.format(LOWER_BOUND_MEDIANA))
-# print('_UPPER_BOUND_MEDIANA: {}'.format(UPPER_BOUND_MEDIANA))
 
 def plot_dataframe(df, title):
     global acceleration_impact_analyzed
@@ -61,7 +41,7 @@ def plot_dataframe(df, title):
 def analyze_dataframe(df, title):
     print('\n__dataframe: {}__'.format(title))
     a = df['a']
-    print('___a: {}__'.format(a.size))
+
     a = a[2:]
 
     print('___fall evaluation___')
@@ -69,37 +49,54 @@ def analyze_dataframe(df, title):
     result = False
 
     if a.size == 12:
-        print('___free fall___')
-        result_mediana = mediana <= MAX_MEDIANA and mediana >= MIN_MEDIANA
 
-        filtered = a[a >= MIN_MEDIANA]
-        filtered = filtered[filtered <= MAX_MEDIANA]
-        result_filtered = filtered.size >= (MEDIANA_INTERVAL_SIZE / 2)
+        # Accelerazione impatto: 14.37
+        # Lower bound: G * 0.93
+        # Upper bound: G * 1.05
+        # Mediana interval size: 6
+
+        print('___free fall___')
+        result_mediana = mediana <= G * 1.05 and mediana >= G * 0.93
+
+        filtered = a[a >= G * 0.93]
+        filtered = filtered[filtered <= G * 1.05]
+        result_filtered = filtered.size >= 6
 
         result = result_mediana and result_filtered
 
-        print('__mediana\ncurrent: {}; result: {}; MAX_MEDIANA: {}; MIN_MEDIANA: {}'.format(mediana, result_mediana, MAX_MEDIANA, MIN_MEDIANA))
-        print('__filter\nmin: {}; max: {}; current: {}; got: {}: result: {}'.format(MIN_MEDIANA, MAX_MEDIANA, a.size, filtered.size, result_filtered))
+        print('__mediana__\ncurrent: {}; result: {}; MAX_MEDIANA: {}; MIN_MEDIANA: {}'
+            .format(mediana, result_mediana, G * 1.03, G * 0.93))
+        print('__filter\nmin: {}; max: {}; current: {}; got: {}: result: {}'
+            .format(G * 0.93, G * 1.05, a.size, filtered.size, result_filtered))
         print(filtered)
     else:
         std = a.std()
 
+        # Accelerazione impatto: 2.5 * G
+        # Lower bound: G * 0.93
+        # Upper bound: G * 1.03
+        # Mediana interval size: 15
+
         print('___shock___')
         result_mediana = True
         result_std = std >= MIN_SQM
-        spike = a[a > ACCELERATION_IMPACT]
+        spike = a[a >= 2.5 * G]
         result_spikes = spike.size <= MAX_SPIKES
 
-        filtered = a[a >= LOWER_BOUND_MEDIANA * mediana]
-        filtered = filtered[filtered <= UPPER_BOUND_MEDIANA * mediana]
-        result_filtered = filtered.size >= MEDIANA_INTERVAL_SIZE
+        filtered = a[a >= G * 0.93]
+        filtered = filtered[filtered <= G * 1.03]
+        result_filtered = filtered.size >= 15
 
         print(a.describe())
         print('__mediana: {}__'.format(mediana))
-        print('__mediana__\ncurrent: {}; result: {}; MAX_MEDIANA: {}; MIN_MEDIANA: {}'.format(mediana, result_mediana, MAX_MEDIANA, MIN_MEDIANA))
-        print('__dev standard__\nmin: {}; current: {}; result: {}'.format(MIN_SQM, std, result_std))
-        print('__spikes__\nthreshold: {}; max: {}; current: {}; result: {}'.format(ACCELERATION_IMPACT, MAX_SPIKES, spike.size, result_spikes))
-        print('__filter__\nmin: {}; max: {}; current: {}; got: {}: result: {}'.format(LOWER_BOUND_MEDIANA * mediana, UPPER_BOUND_MEDIANA * mediana, a.size, filtered.size, result_filtered))
+        print('__mediana__\ncurrent: {}; result: {}; MAX_MEDIANA: {}; MIN_MEDIANA: {}'
+            .format(mediana, result_mediana, G * 1.03, G * 0.93))
+        print('__dev standard__\nmin: {}; current: {}; result: {}'
+            .format(MIN_SQM, std, result_std))
+        print('__spikes__\nthreshold: {}; max: {}; current: {}; result: {}'
+            .format(2.5 * G, MAX_SPIKES, spike.size, result_spikes))
+        print('__filter__\nmin: {}; max: {}; current: {}; got: {}: result: {}'
+            .format(G * 0.93, G * 1.03, a.size, filtered.size, result_filtered))
         result = result_mediana and result_spikes and result_filtered and result_std
 
     if result:
@@ -107,7 +104,6 @@ def analyze_dataframe(df, title):
     else:
         print('_No fall detected')
 
-    print(a.sort_values())
     sorted = a.sort_values()
     sorted.plot.line(title='sorted', use_index=False)
 
@@ -117,16 +113,22 @@ def analyze_dataframe_from_csv_name(csv_name):
     analyze_dataframe(riposo, csv_name)
 
 
-# csv_name='paragone/test-4/101/FP-test4'
-csv_name='test-notturno/FP/camminata.freefall.1'
+csv_name='cciv/i'
 riposo = pandas.read_csv('{}.csv'.format(csv_name), sep=';')
-# plot_dataframe(riposo, csv_name)
 analyze_dataframe(riposo, csv_name)
 
-csv_name='test-notturno/FP/tp1'
+csv_name='cciv/ii'
 riposo = pandas.read_csv('{}.csv'.format(csv_name), sep=';')
-# plot_dataframe(riposo, csv_name)
 analyze_dataframe(riposo, csv_name)
 
-plt.savefig('{}.png'.format('confronto'))
+csv_name='cciv/iii'
+riposo = pandas.read_csv('{}.csv'.format(csv_name), sep=';')
+analyze_dataframe(riposo, csv_name)
+
+csv_name='cciv/iv'
+riposo = pandas.read_csv('{}.csv'.format(csv_name), sep=';')
+analyze_dataframe(riposo, csv_name)
+
+
+plt.savefig('cciv/{}.png'.format('confronto'))
 plt.show()

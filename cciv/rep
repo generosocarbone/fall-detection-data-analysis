@@ -1,0 +1,13 @@
+i 6.173816;-25.479591;-1.068962;26.238679;shock no free fall check for stasis
+ii 26.266817;-6.631592;-2.505962;27.206682;shock no free fall check for stasis
+iii -7.482184;-25.900591;-12.906962;29.890021;shock no free fall check for stasis
+iv 8.548817;3.481408;23.083038;24.860192;shock no free fall check for stasis
+v -24.721182;-1.574592;1.669038;24.827442;shock no free fall check for stasis
+vi 19.217817;-36.607594;-33.765965;53.381465;shock no free fall check for stasis
+vii 7.820816;-7.493592;22.049038;24.565813;shock no free fall check for stasis
+viii -7.559184;22.865408;-9.400962;25.852393;shock no free fall check for stasis
+
+ix 8.759816;-10.845592;5.212038;14.883769;shock T_DURATION: 400
+x -16.427183;-12.856592;-17.024963;26.925707;shock T_DURATION: 401
+xi 17.378817;4.151408;4.178038;18.349754;shock T_DURATION: 199
+xii -7.137184;8.001409;-10.167962;14.776650;shock T_DURATION: 199
